@@ -1,0 +1,48 @@
+<svg width="1400" height="940" viewBox="0 0 1400 940" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#e0f7ff" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="940" fill="url(#bgGradient)" />
+
+  <!-- Decorative Circles in Background -->
+  <circle cx="200" cy="200" r="80" fill="#ffcccb" opacity="0.5" />
+  <circle cx="1200" cy="100" r="60" fill="#0d6efd" opacity="0.4" />
+  <circle cx="1300" cy="800" r="90" fill="#ffc107" opacity="0.3" />
+
+  <!-- "Refer a Friend" Text Section -->
+  <text x="100" y="200" font-family="Arial, sans-serif" font-size="80" fill="#0d6efd" font-weight="bold">
+    REFER A FRIEND
+  </text>
+  <text x="100" y="300" font-family="Arial, sans-serif" font-size="32" fill="#333" opacity="0.8">
+    Share the joy with your friends and earn rewards!
+  </text>
+  <text x="100" y="340" font-family="Arial, sans-serif" font-size="32" fill="#333" opacity="0.8">
+    Invite a friend to join, and get exciting offers for both.
+  </text>
+  <rect x="100" y="400" width="240" height="60" rx="30" fill="#f04d4d" />
+  <text x="140" y="440" font-family="Arial, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold">
+    LEARN MORE
+  </text>
+
+  <!-- Decorative Plants and Shapes -->
+  <ellipse cx="1160" cy="800" rx="70" ry="30" fill="#28a745" opacity="0.6" />
+  <ellipse cx="900" cy="780" rx="90" ry="40" fill="#17a2b8" opacity="0.6" />
+  <path d="M840,780 C850,740 950,740 960,780 Q950,810 940,780" fill="#17a2b8" opacity="0.8" />
+  <path d="M1180,780 C1190,740 1270,740 1280,780 Q1270,805 1260,780" fill="#28a745" opacity="0.8" />
+
+  <!-- Additional Info Card (moved left to x=1000) -->
+  <rect x="1000" y="500" width="350" height="150" rx="20" fill="#ffc107" opacity="0.8" />
+  <text x="1050" y="550" font-family="Arial, sans-serif" font-size="36" fill="#333" font-weight="bold">
+    Invite  Earn
+  </text>
+  <text x="1050" y="600" font-family="Arial, sans-serif" font-size="24" fill="#333">
+    Get $10 for each friend
+  </text>
+  <text x="1050" y="640" font-family="Arial, sans-serif" font-size="24" fill="#333">
+    who joins through your link.
+  </text>
+</svg>
