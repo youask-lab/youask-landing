@@ -53,7 +53,7 @@ body {
 /* hero section css is here */
 
 .hero-bg-image {
-  background-image: url(./Images/Image\ bg.png);
+  background-image: url(images/Image\ bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,10 +126,10 @@ body {
 /* section 4 css is here  */
 
 .four-background-image {
-  background-image: url(./Images/Bg\ image.png);
-  background-position: center;
+  background-image: url(images/Bg\ image.png);
+  background-position: 50% 0%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 80% 80%;
   height: 70vh;
   width: 100%;
 }
@@ -138,7 +138,7 @@ body {
   background-color: var(--white-color);
   box-shadow: 0px 0px 24px 0px #1a5efc1e;
   border-radius: 16px;
-  /* padding: 80px 48px; */
+/*   padding: 80px 48px; */
   height: 350px;
   width: 100%;
   padding: 48px 24px;
@@ -174,10 +174,10 @@ body {
 }
 
 .card-one {
-  margin: 40px 0px;
+  margin: 60px 0px;
 }
 .card-two {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 /* section 5 css is here  */
