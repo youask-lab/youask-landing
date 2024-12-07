@@ -1,0 +1,699 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+body {
+  font-family: "satoshi", sans-serif !important;
+}
+:root {
+  --white-color: #fff;
+  --dark-text-color: #1c1c1c;
+  --text-secondary-color: #00000066;
+  --tabs-background-color: #f4f7ff;
+  --background-color: #ecf0f1;
+  --tab-text-color: #1d60fc;
+  --tab-hover-color: #0239ba;
+  --admin-panel-content-bgcolor: #f5f5f5;
+  --border-all: 1px solid #00000033;
+}
+
+/* navbar css is here  */
+.nav-item-parent {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.nav-link-text {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(0, 0, 0) !important;
+  transition: color 0.3s ease; /* Optional: smooth transition */
+}
+
+.nav-link-text:hover {
+  /* border-bottom: 1px solid var(--tab-text-color); */
+  text-decoration: underline;
+  color: var(--tab-text-color) !important; /* Change the color on hover */
+}
+
+.btn-login-navbar {
+  width: 150px;
+  background-color: var(--tab-text-color) !important;
+  color: var(--white-color) !important;
+  border-radius: 8px !important;
+  padding: 16px 32px;
+  border: none;
+  transition: color 1s ease-in-out; /* Optional: smooth transition */
+}
+.btn-login-navbar:hover {
+  background-color: var(--tab-hover-color) !important;
+}
+
+/* hero section css is here */
+
+.hero-bg-image {
+  background-image: url(./Images/Image\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-content-section {
+  padding: 14vh 0px;
+  max-width: 700px;
+  width: 100%;
+}
+.hero-section-text-one {
+  width: fit-content;
+  border-radius: 32px;
+  font-size: 14px;
+  background-color: var(--tab-text-color);
+  color: var(--white-color) !important;
+}
+.tag-line-one {
+  color: var(--white-color);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+}
+.tag-line-two {
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+.hero-search {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--tab-text-color);
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section 3 css is here  */
+.second-section-bg-image {
+  background-image: url('images/3711949.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 662px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.second-text-one {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #000000;
+  text-align: left;
+}
+.second-text-two {
+  color: #969696;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+
+/* section 4 css is here  */
+
+.four-background-image {
+  background-image: url(./Images/Bg\ image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 70vh;
+  width: 100%;
+}
+
+.white-background-card {
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 24px 0px #1a5efc1e;
+  border-radius: 16px;
+  /* padding: 80px 48px; */
+  height: 350px;
+  width: 100%;
+  padding: 48px 24px;
+}
+.white-background-card:hover {
+  border: 1px solid var(--tab-text-color);
+  box-shadow: 0px 0px 24px 0px #1a5efc34;
+}
+.card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  height: 45px !important;
+  width: 45px !important;
+  background-color: var(--tab-text-color);
+  color: white;
+  font-size: 24px !important;
+}
+.card-text-one-white {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+}
+.card-text-two-white {
+  font-size: 16px;
+  font-weight: 400;
+  color: #969696;
+  line-height: 21px;
+  text-align: center;
+}
+
+.card-one {
+  margin: 40px 0px;
+}
+.card-two {
+  margin-top: 100px;
+}
+
+/* section 5 css is here  */
+
+.five-main-parent {
+  background: #f4f7ff;
+}
+.five-main-heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+}
+
+.white-background-card-two {
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 24px 0px #1a5efc08;
+  border-radius: 16px;
+  /* padding: 80px 48px; */
+  /* height: 350px; */
+  width: 100%;
+  height: 100% !important;
+  padding: 48px 24px;
+}
+.white-background-card-two:hover {
+  /* border: 1px solid var(--tab-text-color); */
+  box-shadow: 0px 0px 24px 0px #1a5efc34;
+}
+
+.white-background-card-two img {
+  height: 423px !important;
+}
+
+.blue-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--tab-text-color);
+}
+.five-text-one {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.five-text-two {
+  color: #00000066;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+.btn-outline {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #1d60fc !important;
+  border: 1px solid #1d60fc !important;
+  padding: 10px 20px !important;
+  border-radius: 12px !important;
+}
+
+.btn-outline:hover {
+  color: var(--white-color) !important;
+  background-color: #1d60fc;
+}
+
+.white-background-card-three {
+  background-color: var(--white-color);
+  box-shadow: 0px 0px 24px 0px #1a5efc08;
+  border-radius: 16px;
+  /* padding: 80px 48px; */
+  height: 100% !important;
+  width: 100%;
+  padding: 48px 24px;
+}
+.white-background-card-three:hover {
+  /* border: 1px solid var(--tab-text-color); */
+  box-shadow: 0px 0px 24px 0px #1a5efc34;
+}
+
+/* section 6 css is here  */
+
+.nav-link {
+  border-radius: 16px !important;
+  height: 90px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  color: #000000 !important;
+  background-color: var(--white-color) !important;
+}
+
+/* General hover effect for all tabs except the active one */
+.nav-button-tabs .nav-link:not(.active):hover {
+  background-color: var(--white-color) !important;
+  color: #0056b3 !important;
+  border: 2px solid #0056b3;
+}
+
+/* Style for active tab */
+.nav-button-tabs .nav-link.active {
+  background-color: #007bff !important;
+  color: white !important;
+  border: 2px solid #007bff !important;
+}
+
+/* Prevent hover effect on the active tab (text color stays the same) */
+.nav-button-tabs .nav-link.active:hover {
+  background-color: #007bff !important;
+  color: white !important; /* Ensures the text color remains white on hover */
+  border: 2px solid #007bff !important;
+}
+
+.image-div-one {
+  position: relative;
+}
+
+.tabs-main-parent-current {
+  position: absolute;
+}
+
+.stroke-main-div {
+  position: absolute;
+  bottom: -50px;
+  left: 40%;
+}
+
+.image-div-one img {
+  width: 413px;
+  height: 520px;
+  border-radius: 16px;
+}
+
+.stroke-main-div {
+  background-color: #1d60fc;
+  border-radius: 16px;
+  width: 400px;
+}
+
+.stoke-text {
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+}
+
+.stroke-text-two {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: left;
+  color: var(--white-color);
+}
+
+.stroke-text-three {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: var(--white-color);
+}
+
+.feature-text-one {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: #000000;
+}
+
+.feature-text-two {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: #00000066;
+}
+
+/* section seven css is here   */
+.seven-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+
+/* Remove the default Bootstrap accordion icon */
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-item {
+  border-bottom: var(--border-all) !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+/* Default style for accordion button */
+.accordion-button {
+  background-color: transparent;
+  font-size: 22px !important;
+  font-weight: 500;
+  text-align: left;
+  color: black !important;
+}
+
+/* Style for active accordion button */
+.accordion-button.active {
+  background-color: var(--white-color) !important;
+  box-shadow: none !important;
+  color: white;
+}
+
+/* Override for collapsed button */
+.accordion-button:not(.collapsed) {
+  background-color: var(--white-color) !important;
+  box-shadow: none !important;
+  color: white;
+}
+
+/* Style for the accordion body */
+.accordion-body {
+  padding-top: 0px !important;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00000066;
+  line-height: 21px;
+  text-align: left;
+}
+
+.accordion-body.active {
+  background-color: var(--white-color) !important;
+  box-shadow: none !important;
+  color: white;
+}
+
+/* Style for the icons */
+.accordion-button .icon {
+  margin-left: auto; /* Moves the icon to the right */
+  transition: transform 0.2s ease;
+}
+
+.accordion-button.collapsed .icon::before {
+  content: "\f067"; /* Font Awesome "plus" icon */
+  font-family: "FontAwesome";
+}
+
+.accordion-button:not(.collapsed) .icon::before {
+  content: "\f00d"; /* Font Awesome "cross" icon */
+  font-family: "FontAwesome";
+}
+
+/* section eight css is here  */
+.banner-gredient {
+  background: linear-gradient(180deg, #6392ff 0%, #082f88 100%);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+}
+
+.banner-text-one {
+  color: var(--white-color);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  text-align: center;
+}
+.banner-text-two {
+  width: 60%;
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+}
+.btn-banner-white {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+
+  width: fit-content;
+  background-color: var(--white-color) !important;
+  color: #1d60fc !important;
+  border-radius: 8px !important;
+  padding: 16px 32px;
+  border: 1px solid #1d60fc;
+  transition: color 5s ease-in-out; /* Optional: smooth transition */
+}
+.btn-banner-white:hover {
+  background-color: var(--tabs-background-color) !important;
+}
+
+/* footer css is here  */
+.footer-row {
+  border-top: var(--border-all);
+  border-bottom: var(--border-all);
+}
+.footer-heading {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+.footer-text-link {
+  color: #919191;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.footer-text-bottom {
+  border-right: var(--border-all);
+}
+
+/* Remove border and box-shadow when the element is clicked */
+.dropdown-toggle, .form-control {
+  border: none !important;      /* Remove border */
+  box-shadow: none !important;  /* Remove box-shadow */
+  outline: none !important;     /* Remove any outline */
+}
+
+.dropdown-toggle .form-control:focus {
+  border: none !important;      /* Ensure no border on focus */
+  box-shadow: none !important;  /* Ensure no box-shadow on focus */
+  outline: none !important;     /* Ensure no outline on focus */
+}
+
+.search-bar-parent{
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  flex-direction: row !important;
+  /* width: 90%; */
+  flex-wrap: wrap;
+  border-radius: 30px !important;
+}
+
+
+/* media query of all is here  */
+
+/* this is medium size  */
+@media (max-width: 991px) {
+  .navbar-ite{
+    display: flex !important;
+    justify-content: start !important;
+    align-items: start !important;
+    flex-direction: column !important;
+  }
+  .second-text-one {
+    margin-top: 40px !important;
+  }
+  .four-background-image {
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+  }
+  .card-one {
+    margin-top: 0px !important;
+  }
+  .card-two {
+    margin-top: 0px !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .hero-content-section {
+    width: 90%;
+  }
+  .tag-line-one {
+    font-size: 46px;
+    font-weight: 700;
+  }
+  .tag-line-two {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .second-section-bg-image {
+    height: 402px;
+    width: 100%;
+  }
+  .play-button-image {
+    width: 140px !important;
+  }
+  .second-text-one {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .second-text-two {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .section-four-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    margin-bottom: 0px !important;
+  }
+  .white-background-card {
+    margin: 0px !important;
+  }
+  .accordion-main-parent {
+    margin-top: 5vh;
+  }
+
+  .banner-text-one {
+    font-size: 46px;
+    font-weight: 700;
+  }
+  .banner-text-two {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn-banner-white {
+    font-size: 14px;
+    font-weight: 700;
+    width:80%;
+    text-align: center;
+  }
+  .footer-banner-image{
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 575px){
+  .search-bar-parent{
+    display: flex !important;
+    justify-content: start !important;
+    align-items: start !important;
+    flex-direction: column !important;
+    /* width: 90%; */
+    flex-wrap: wrap;
+    border-radius: 10px !important;
+  }
+  .nav-content-parent{
+    padding: 10px 30px !important;
+  }
+  .hero-content-section {
+    padding: 5vh 0px;
+  }
+  .search-input{
+    border: none !important;
+  }
+  .gallery-cards{
+    flex-wrap: wrap !important;
+  }
+  .banner-gredient {
+    border-radius: 0px !important;
+    height: fit-content !important;
+    padding: 12vh 0px;
+  }
+  .footer-banner-image{
+    padding-top: 5vh;
+  }
+  .navbar-nav{
+    flex-wrap: wrap !important;
+    gap: 0px !important;
+  }
+  .nav-item-parent{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .nav-link-text{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+}
+
+
+@media (max-width: 400px){
+  .five-main-heading{
+    font-size: 30px;
+    width: 90%;
+  }
+  .search-input ,.form-control{
+    width: 100% !important;
+  }
+}
+
+/* only for section six  */
+@media (max-width: 1199px){
+  .section-six-row .col-lg-6{
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column !important;
+  }
+  .tabs-main-parent-current {
+    position: relative;
+  }
+  .button-tabs-here{
+    margin-top: 12vh !important;
+  }
+}
+@media (max-width: 772px){
+  .stroke-main-div{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 0px;
+    width: 100%;
+  }
+  .image-div-one img{
+    width: 100% !important;
+    height: 300px !important;
+  }
+}
