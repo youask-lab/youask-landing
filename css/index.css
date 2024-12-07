@@ -1,0 +1,29 @@
+* {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.coming-soon-container {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#coming-soon-text {
+    height: auto;
+    width: auto;
+    font-size: 5vh;
+    font-family: "Nunito Sans", sans-serif !important;
+    color: #aaa;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 01)
+}
+
+@media screen and (max-width: 600px) {
+    #coming-soon-text {
+        font-size: 5vh;
+    }
+}
