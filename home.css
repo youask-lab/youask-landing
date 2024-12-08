@@ -692,7 +692,6 @@ body {
   .section-one {
     margin: 0;
     padding: 0;
-/*     height: 6vh; */
   }
   .navbar {
     height: 100%;
@@ -729,11 +728,11 @@ body {
   .navbar-nav {
     margin: 5px 0;
   }
-  .nav-item {
+  .header-nav-item {
     padding: 0 !important;
     margin: 5px 0;
   }
-  .nav-link {
+  .header-nav-link {
     max-height: 30px;
     font-size: 15px;
   }
@@ -768,38 +767,21 @@ body {
     justify-content: center;
   }
 
-  .white-background-card {
-    background-color: var(--white-color);
-    box-shadow: 0px 0px 24px 0px #1a5efc1e;
-    border-radius: 16px;
-  /*   padding: 80px 48px; */
-    height: 350px;
-    width: 100%;
-    padding: 48px 24px;
-  }
   .card-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    height: 45px !important;
-    width: 45px !important;
-    background-color: var(--tab-text-color);
-    color: white;
-    font-size: 24px !important;
+    min-height: 40px;
   }
   
   .white-background-card {
     width: 80%;
-    max-height: 25vh;
+    max-height: 250px;
   }
   
   .card-one {
-/*     margin: 0 10% 0 0 !important; */
+
   }
   
   .card-two {
-/*     margin: 0 0 0 10% !important; */
+
   }
   
   .card-text-one-white-head {
@@ -808,5 +790,59 @@ body {
   
   .card-text-two-white-desc {
     font-size: 15px;
+  }
+  
+  .key-feature-main-parent>.container {
+    margin: 0 !important;
+    padding-top: 20px !important;
+  }
+  
+  .image-div-one {
+    display: none;
+  }
+  
+  #myTabContent {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tab-pane {
+    width: 90%;
+    transition-duration: 0.2s;
+  }
+  
+  .tab-pane>.tabs-main-parent-current {
+
+  }
+  .stroke-main-div {
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  }
+  .stroke-main-div>.stoke-text {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+  }
+  .stroke-main-div>.stroke-text-two {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+  }
+  .stroke-main-div>.stroke-text-three {
+    font-size: 15px;
+    margin: 0;
+  }
+  
+  .button-tabs-here {
+    margin: 30px 0 0 0 !important;
+  }
+  
+  .feature-nav-item>.active {
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  }
+  
+  .feature-nav-link {
+    max-height: 50px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    transition-duration: 0.2s;
   }
 }
