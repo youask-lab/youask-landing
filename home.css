@@ -688,6 +688,22 @@ body {
   }
 }
 
+.login-signup-button {
+  min-width: 150px;
+  padding: 0;
+}
+.login-signup-link {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  padding: 10px 5px;
+  margin: 0;
+}
+.login-signup-link:hover {
+  color: #fff;
+}
+
 @media (max-width: 400px){
   .section-one {
     margin: 0;
@@ -736,10 +752,6 @@ body {
   .header-nav-link {
     max-height: 30px;
     font-size: 15px;
-  }
-  
-  .login-signup-button {
-    padding: 5px;
   }
   
   .login-signup-link {
