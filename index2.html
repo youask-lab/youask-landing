@@ -79,7 +79,7 @@
         }
 
         .custom-shape-divider-bottom-1743417916 .shape-fill {
-            fill: #F1FFFF;
+            fill: #Fff;
         }
 
 
@@ -101,7 +101,7 @@
         }
 
         .custom-shape-divider-top-1743419769 .shape-fill {
-            fill: #F1FFFF;
+            fill: #Fff;
         }
 
         /* ----left lean---- */
@@ -123,7 +123,7 @@
         }
 
         .custom-shape-divider-top-1743420009 .shape-fill {
-            fill: #FFF1FF;
+            fill: #F8F9FC;
         }
     </style>
 </head>
@@ -153,29 +153,31 @@
                 <div class="wrapper">
                     <!-- <img class="intro-bg" src="./images/bg-layer.svg"> -->
                     <div class="intro-banner">
-                        <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <!-- <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
                             <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z"
                                 style="animation: path0 5s linear infinite alternate;" />
                             <path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z"
                                 style="animation: path1 12.5s linear infinite alternate;" />
                             <path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 60L-100 60Z"
                                 style="animation: path2 30s linear infinite alternate;" />
-                        </svg>
+                        </svg> -->
                         <div class="inner-wrapper">
-                            <div class="tagline-group" data-tilt data-tilt-full-page-listening>
-                                <p class="intro-header-text" id="youask-tag-line"></p>
-                            </div>
-                            <p class="intro-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into
-                                Income. Connect, Learn, and Grow Together!
-                            </p>
-                            <form class="search-form" action="#">
-                                <div class="search-bar-group" data-aos="fade-up" data-aos-delay="100">
-                                    <input class="search-bar-input">
-                                    <button class="search-bar-button">
-                                        <span class="material-icons-round">search</span>
-                                    </button>
+                            <!-- <div class="glass"> -->
+                                <div class="tagline-group" data-tilt data-tilt-full-page-listening>
+                                    <p class="intro-header-text" id="youask-tag-line"></p>
                                 </div>
-                            </form>
+                                <p class="intro-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into
+                                    Income. Connect, Learn, and Grow Together!
+                                </p>
+                                <form class="search-form" action="#">
+                                    <div class="search-bar-group" data-aos="fade-up" data-aos-delay="100">
+                                        <input class="search-bar-input">
+                                        <button class="search-bar-button">
+                                            <span class="material-icons-round">search</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            <!-- </div> -->
                         </div>
                         <div class="custom-shape-divider-bottom-1743417916">
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -634,16 +636,16 @@
                     <div class="footer-app-social-link-container">
                         <p class="footer-app-social-header-text" data-aos="fade-up" data-aos-delay="100">Join us at:</p>
                         <div class="footer-app-social-links">
-                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="100">
+                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="footer">
                                 <img src="images/share-fb.png" class="app-social-image">
                             </a>
-                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="150">
+                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="footer">
                                 <img src="images/share-insta.png" class="app-social-image">
                             </a>
-                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="200">
+                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="footer">
                                 <img src="images/share-linkedin.png" class="app-social-image">
                             </a>
-                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="250">
+                            <a href="#" class="app-social-link" data-aos="fade-up" data-aos-delay="250" data-aos-anchor="footer">
                                 <img src="images/share-twitterx.png" class="app-social-image">
                             </a>
                         </div>
@@ -694,6 +696,9 @@
             var typed = new Typed('#youask-tag-line', {
                 strings: ['Connect . Learn . Monetize'],
                 typeSpeed: 50,
+                onComplete: function(e) {
+                    $('.typed-cursor--blink').hide();
+                }
             });
 
             var elems = document.querySelectorAll('.collapsible');

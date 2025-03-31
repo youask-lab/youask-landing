@@ -11,6 +11,7 @@ html {}
 
 body {
     overflow-x: hidden;
+    background: #c8d3f6;
     /*   background-color: #F1FFFF; */
     /* background: url('./images/intro-bg-4.webp'); */
 
@@ -129,14 +130,27 @@ section>.wrapper {}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 200px;
+    padding-bottom: 0px;
     width: 100%;
+    background: linear-gradient(176.14deg, #EEF2FC 3.16%, #c8d3f6 88.05%);
+}
+
+.section-intro .intro-banner .glass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff5;
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 100px 100px;
 }
 
 .section-intro .intro-banner .tagline-group {
     display: flex;
     align-items: center;
     font-size: 60px;
+    margin-top: -120px;
 }
 
 .section-intro .intro-banner .intro-header-text {
@@ -159,13 +173,13 @@ section>.wrapper {}
 }
 
 .section-intro .search-form {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .section-intro .search-bar-group {
     display: flex;
     align-items: center;
-    background: #E4EBFA;
+    background: #fff;
     width: 700px;
     height: 60px;
     border-radius: 40px;
@@ -204,6 +218,7 @@ section>.wrapper {}
     position: relative;
     display: flex;
     justify-content: center;
+
 }
 
 .section-intro .intro-demo .intro-demo-placeholder {
@@ -226,7 +241,7 @@ section>.wrapper {}
 .section-platform-features {
     position: relative;
     z-index: 5;
-    background-color: #F1FFFF;
+    background-color: #fff;
     margin-top: -30px;
 
     /*   border-radius: 0 0 60px 60px; */
@@ -258,6 +273,8 @@ section>.wrapper {}
 
 .section-header-group.sticky {
     background-color: #fffa;
+    gap: 5px;
+    padding: 0px 0 10px 0;
 }
 
 .section-header-group .section-header-text {
@@ -265,6 +282,12 @@ section>.wrapper {}
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0%;
+    transition: 0.5s linear all;
+}
+
+.section-header-group.sticky .section-header-text {
+    font-size: 28px;
+    line-height: 32px;
 }
 
 .highlight {
@@ -370,7 +393,7 @@ section>.wrapper {}
 .section-persona>.wrapper {
     padding-top: calc(56px + 60px);
     padding-bottom: 56px;
-    background-color: #FFF1FF;
+    background: linear-gradient(176.14deg, #EEF2FC 3.16%, #F8F9FC 88.05%);
 }
 
 .section-persona .section-header-group {
@@ -509,7 +532,7 @@ section>.wrapper {}
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0px 0px 24px 0px #1a5efc08;
-    background-color: #fff;
+    background-color: #EEF2FC;
 }
 
 .section-categories .category-card>.wrapper:hover {
@@ -811,6 +834,7 @@ footer>.wrapper {
     padding-right: 80px;
     padding-bottom: 32px;
     padding-left: 80px;
+    background-color: #fff;
 }
 
 .footer-section {
