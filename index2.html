@@ -15,249 +15,117 @@
     <link rel="stylesheet" href="./home2.css" />
 
     <style>
-        
-        .anim-wrapper {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-          filter: blur(150px);
-        }
-  
-        .gradient {
-          position: absolute;
-          border-radius: 100%;
-          opacity: 0.6;
-          mix-blend-mode: screen;
-          animation-iteration-count: infinite;
-          animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
-        }
-  
-        
-    .gradient-1 {
-      background: rgb(255, 0, 0);
-      width: 700px;
-      height: 700px;
-      animation-duration: 11s;
-      opacity: 0.6;
-      left: 60%;
-      top: 40%;
-      z-index: -2;
-      animation-name: animation-gradient-1;
-    }
-    .gradient-2 {
-      background: rgb(0, 255, 0);
-      width: 600px;
-      height: 600px;
-      animation-duration: 11s;
-      opacity: 0.6;
-      left: 40%;
-      top: 60%;
-      z-index: -1;
-      animation-name: animation-gradient-2;
-    }
-    .gradient-3 {
-      background: rgb(0, 0, 255);
-      width: 500px;
-      height: 500px;
-      animation-duration: 11s;
-      opacity: 0.6;
-      left: 50%;
-      top: 50%;
-      z-index: -3;
-      animation-name: animation-gradient-3;
-    }
-  
-        @keyframes animation-gradient-1 {
-          0% {
-            transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
-          }
-          25% {
-            transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
-              rotate(80deg) translateX(30%);
-          }
-          50% {
-            transform: translateY(-50%) translateX(-50%) rotate(180deg) translateX(25%);
-          }
-          75% {
-            transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
-              rotate(240deg) translateX(15%);
-          }
-          100% {
-            transform: translateY(-50%) translateX(-50%) rotate(340deg) translateX(20%);
-          }
-        }
-        
-        @keyframes animation-gradient-2 {
-          0% {
-            transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
-          }
-          25% {
-            transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
-              rotate(110deg) translateX(-5%);
-          }
-          50% {
-            transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
-          }
-          75% {
-            transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
-              rotate(300deg) translateX(-10%);
-          }
-          100% {
-            transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
-          }
-        }
-        
-        @keyframes animation-gradient-3 {
-          0% {
-            transform: translateY(-50%) translateX(-50%) translateX(-15%)
-              translateY(10%);
-          }
-          20% {
-            transform: translateY(-50%) translateX(-50%) translateX(20%)
-              translateY(-30%);
-          }
-          40% {
-            transform: translateY(-50%) translateX(-50%) translateX(-25%)
-              translateY(-15%);
-          }
-          60% {
-            transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
-          }
-          80% {
-            transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
-          }
-          100% {
-            transform: translateY(-50%) translateX(-50%) translateX(-15%)
-              translateY(10%);
-          }
+        path {
+            transform-origin: 50% 0%;
         }
 
-        /* .background--custom {
-      background: linear-gradient(90deg, #9c33e4, #de9e94, #cca3fd);
-      background-size: 300% 300%;
-      animation: gradient 4s alternate infinite;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-    }
-    @keyframes gradient {
-      0% {
-        background-position: 0%;
-      }
-      100% {
-        background-position: 100%;
-      }
-    } */
-
-    path {
-        transform-origin: 50% 0%;
-      }
-      .background--custom {
-        background-color: transparent;
-        position: absolute;
-        width: 100vw;
-        height: 100%;
-        z-index: -1;
-        top: 0;
-        left: 0;
-      }
-      @keyframes path0 {
-        0% {
-          transform: rotate(-10deg);
+        .background--custom {
+            background-color: transparent;
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            will-change: transform;
         }
-        100% {
-          transform: rotate(10deg);
+
+        @keyframes path0 {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
         }
-      }
-      @keyframes path1 {
-        0% {
-          transform: rotate(-30deg);
+
+        @keyframes path1 {
+            0% {
+                transform: rotate(-30deg);
+            }
+
+            100% {
+                transform: rotate(30deg);
+            }
         }
-        100% {
-          transform: rotate(30deg);
+
+        @keyframes path2 {
+            0% {
+                transform: rotate(40deg);
+            }
+
+            100% {
+                transform: rotate(-40deg);
+            }
         }
-      }
-      @keyframes path2 {
-        0% {
-          transform: rotate(40deg);
+
+        .custom-shape-divider-bottom-1743417916 {
+            /* position: absolute; */
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
         }
-        100% {
-          transform: rotate(-40deg);
+
+        .custom-shape-divider-bottom-1743417916 svg {
+            position: relative;
+            display: block;
+            width: calc(156% + 1.3px);
+            height: 350px;
+            transform: rotateY(180deg);
         }
-      }
 
-      .custom-shape-divider-bottom-1743417916 {
-    /* position: absolute; */
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1743417916 svg {
-    position: relative;
-    display: block;
-    width: calc(156% + 1.3px);
-    height: 350px;
-    transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1743417916 .shape-fill {
-    fill: #F1FFFF;
-}
+        .custom-shape-divider-bottom-1743417916 .shape-fill {
+            fill: #F1FFFF;
+        }
 
 
-/* ----right lean--- */
-.custom-shape-divider-top-1743419769 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
+        /* ----right lean--- */
+        .custom-shape-divider-top-1743419769 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
 
-.custom-shape-divider-top-1743419769 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 95px;
-}
+        .custom-shape-divider-top-1743419769 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 95px;
+        }
 
-.custom-shape-divider-top-1743419769 .shape-fill {
-    fill: #F1FFFF;
-}
+        .custom-shape-divider-top-1743419769 .shape-fill {
+            fill: #F1FFFF;
+        }
 
-/* ----left lean---- */
-.custom-shape-divider-top-1743420009 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
+        /* ----left lean---- */
+        .custom-shape-divider-top-1743420009 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
 
-.custom-shape-divider-top-1743420009 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 95px;
-    transform: rotateY(180deg);
-}
+        .custom-shape-divider-top-1743420009 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 95px;
+            transform: rotateY(180deg);
+        }
 
-.custom-shape-divider-top-1743420009 .shape-fill {
-    fill: #FFF1FF;
-}
-  
-      </style>
+        .custom-shape-divider-top-1743420009 .shape-fill {
+            fill: #FFF1FF;
+        }
+    </style>
 </head>
 
 <body>
@@ -285,14 +153,13 @@
                 <div class="wrapper">
                     <!-- <img class="intro-bg" src="./images/bg-layer.svg"> -->
                     <div class="intro-banner">
-                        <!-- <div class="anim-wrapper">
-                            <div class="gradient gradient-1"></div>
-                            <div class="gradient gradient-2"></div>
-                            <div class="gradient gradient-3"></div>
-                          </div> -->
-                          <!-- <div class="background--custom"></div> -->
                         <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
-                            <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z" style="animation: path0 5s linear infinite alternate;" /><path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z" style="animation: path1 12.5s linear infinite alternate;" /><path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 60L-100 60Z" style="animation: path2 30s linear infinite alternate;" />
+                            <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z"
+                                style="animation: path0 5s linear infinite alternate;" />
+                            <path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z"
+                                style="animation: path1 12.5s linear infinite alternate;" />
+                            <path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 60L-100 60Z"
+                                style="animation: path2 30s linear infinite alternate;" />
                         </svg>
                         <div class="inner-wrapper">
                             <div class="tagline-group" data-tilt data-tilt-full-page-listening>
@@ -311,7 +178,8 @@
                             </form>
                         </div>
                         <div class="custom-shape-divider-bottom-1743417916">
-                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                                preserveAspectRatio="none">
                                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                             </svg>
                         </div>
@@ -417,7 +285,8 @@
 
             <div class="section-persona">
                 <div class="custom-shape-divider-top-1743419769">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                     </svg>
                 </div>
@@ -503,7 +372,8 @@
 
             <div class="section-categories">
                 <div class="custom-shape-divider-top-1743420009 category">
-                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                     </svg>
                 </div>
@@ -803,7 +673,7 @@
                     <a href="#" class="footer-policy-link" data-aos="fade-up" data-aos-delay="150"
                         data-aos-anchor="footer">Privacy Policy</a>
                     <a href="#" class="footer-policy-link" data-aos="fade-up" data-aos-delay="150"
-                        data-aos-anchor="footer">Terms ofService</a>
+                        data-aos-anchor="footer">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -869,7 +739,7 @@
 
             var waypoint = new Waypoint({
                 element: document.getElementById('snap-point-header'),
-                handler: function(direction) {
+                handler: function (direction) {
                     console.log('Basic waypoint triggered', direction);
                     if (direction === 'down') {
                         $('header').addClass('sticky');
@@ -882,13 +752,13 @@
 
             var waypoint = new Waypoint.Inview({
                 element: document.getElementById('snap-point-features-header'),
-                entered: function(direction) {
+                entered: function (direction) {
                     console.log('Entered triggered with direction ' + direction)
                     if (direction === 'up') {
                         $(this.element).removeClass('sticky');
                     }
                 },
-                exit: function(direction) {
+                exit: function (direction) {
                     console.log('Exit triggered with direction ' + direction)
                     if (direction === 'down') {
                         $(this.element).addClass('sticky');
@@ -900,13 +770,13 @@
 
             var waypoint = new Waypoint.Inview({
                 element: document.getElementById('snap-point-persona-header'),
-                entered: function(direction) {
+                entered: function (direction) {
                     console.log('Entered triggered with direction ' + direction)
                     if (direction === 'up') {
                         $(this.element).removeClass('sticky');
                     }
                 },
-                exit: function(direction) {
+                exit: function (direction) {
                     console.log('Exit triggered with direction ' + direction)
                     if (direction === 'down') {
                         $(this.element).addClass('sticky');
@@ -918,13 +788,13 @@
 
             var waypoint = new Waypoint.Inview({
                 element: document.getElementById('snap-point-category-header'),
-                entered: function(direction) {
+                entered: function (direction) {
                     console.log('Entered triggered with direction ' + direction)
                     if (direction === 'up') {
                         $(this.element).removeClass('sticky');
                     }
                 },
-                exit: function(direction) {
+                exit: function (direction) {
                     console.log('Exit triggered with direction ' + direction)
                     if (direction === 'down') {
                         $(this.element).addClass('sticky');
