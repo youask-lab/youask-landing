@@ -12,6 +12,9 @@ html {
 }
 
 body {
+  overflow-x: hidden;
+/*   background-color: #F1FFFF; */
+  /* background: url('./images/intro-bg-4.webp'); */
   
 }
 
@@ -115,14 +118,26 @@ section>.wrapper {
   overflow: hidden;
   position: relative;
   box-sizing: content-box;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 0 0 60px 60px;
-  border-bottom: 1px solid #ccc;
+/*   border-radius: 0 0 60px 60px; */
+/*   border-bottom: 1px solid #ccc; */
+/*   padding-bottom: 200px; */
+/*   background-color: #E4EBFA55; */
+}
+.section-intro .intro-banner .inner-wrapper {
+  overflow: hidden;
+  box-sizing: content-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 200px;
+  width: 100%;
 }
 
 .section-intro .intro-banner .tagline-group {
@@ -192,10 +207,7 @@ section>.wrapper {
 }
 
 .section-intro .intro-demo {
-  position: relative;
-}
-
-.section-intro .intro-demo {
+  margin-top: -500px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -204,7 +216,8 @@ section>.wrapper {
 .section-intro .intro-demo .intro-demo-placeholder {
 /*   position: absolute; */
 /*   top: -200px; */
-  margin-top: -200px;
+  position: relative;
+  z-index: 6;
   height: 530px;
   width: 70%;
   max-width: 1000px;
@@ -220,16 +233,16 @@ section>.wrapper {
 .section-platform-features {
   position: relative;
   z-index: 5;
-  background-color: #fff;
-  padding-top: calc((100vh - 530px) / 2);
-  padding-right: 80px;
-  padding-bottom: 56px;
-  padding-left: 80px;
-  border-radius: 0 0 60px 60px;
-  border-bottom: 1px solid #ddd;
+  background-color: #F1FFFF;
+  margin-top: -30px;
+  
+/*   border-radius: 0 0 60px 60px; */
+/*   border-bottom: 1px solid #ddd; */
 }
 
 .section-platform-features>.wrapper {
+  padding-top: calc((100vh - 530px) / 2);
+  padding-bottom: 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +252,6 @@ section>.wrapper {
 .section-header-group {
   position: sticky;
   top: 60px;
-  background-color: #fffa;
   backdrop-filter: blur(5px);
   z-index: 2;
   width: 100%;
@@ -249,6 +261,10 @@ section>.wrapper {
 /*   background-color: #fff; */
   gap: 16px;
   padding: 10px 0;
+}
+
+.section-header-group.sticky {
+  background-color: #fffa;
 }
 
 .section-header-group .section-header-text {
@@ -278,6 +294,8 @@ section>.wrapper {
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  padding-right: 80px;
+  padding-left: 80px;
 }
 
 .section-platform-feature-list .platform-feature-item {
@@ -353,14 +371,15 @@ section>.wrapper {
 .section-persona {
   position: relative;
   z-index: 4;
-  margin-top: -60px;
+/*   margin-top: -60px; */
+/*   border-radius: 0 0 60px 60px; */
+/*   border-bottom: 1px solid #ddd; */
+}
+
+.section-persona>.wrapper {
   padding-top: calc(56px + 60px);
-  padding-right: 80px;
   padding-bottom: 56px;
-  padding-left: 80px;
-  border-radius: 0 0 60px 60px;
-  border-bottom: 1px solid #ddd;
-  background-color: #fff;
+  background-color: #FFF1FF;
 }
 
 .section-persona .section-header-group {
@@ -370,9 +389,9 @@ section>.wrapper {
 .section-persona .section-content {
   display: flex;
   padding-top: 106px;
-  padding-right: 80px;
   padding-bottom: 56px;
-  padding-left: 80px;
+  padding-right: calc(80px + 80px);
+  padding-left: calc(80px + 80px);
 }
 
 .section-persona .persona-switch-container {
@@ -479,11 +498,9 @@ section>.wrapper {
 .section-categories {
   position: relative;
   z-index: 3;
-  margin-top: -60px;
+/*   margin-top: -60px; */
   padding-top: calc(56px + 60px);
-  padding-right: 80px;
   padding-bottom: 56px;
-  padding-left: 80px;
   border-radius: 0 0 60px 60px;
   border-bottom: 1px solid #ddd;
   background-color: #fff;
@@ -496,9 +513,9 @@ section>.wrapper {
   gap: 24px;
   
   padding-top: 106px;
-  padding-right: 80px;
   padding-bottom: 56px;
-  padding-left: 80px;
+  padding-right: calc(80px + 80px);
+  padding-left: calc(80px + 80px);
 }
 
 .section-categories .category-card {
@@ -511,6 +528,7 @@ section>.wrapper {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0px 0px 24px 0px #1a5efc08;
+    background-color: #fff;
 }
 
 .section-categories .category-card>.wrapper:hover {

@@ -158,10 +158,10 @@
         transform-origin: 50% 0%;
       }
       .background--custom {
-        background-color: #FFFFFF;
+        background-color: transparent;
         position: absolute;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         z-index: -1;
         top: 0;
         left: 0;
@@ -190,12 +190,78 @@
           transform: rotate(-40deg);
         }
       }
+
+      .custom-shape-divider-bottom-1743417916 {
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1743417916 svg {
+    position: relative;
+    display: block;
+    width: calc(156% + 1.3px);
+    height: 350px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1743417916 .shape-fill {
+    fill: #F1FFFF;
+}
+
+
+/* ----right lean--- */
+.custom-shape-divider-top-1743419769 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1743419769 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+}
+
+.custom-shape-divider-top-1743419769 .shape-fill {
+    fill: #F1FFFF;
+}
+
+/* ----left lean---- */
+.custom-shape-divider-top-1743420009 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1743420009 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1743420009 .shape-fill {
+    fill: #FFF1FF;
+}
   
       </style>
 </head>
 
 <body>
-    <header>
+    <header id="snap-point-header">
         <div class="wrapper">
             <div class="header-logo-container" data-aos="fade-right">
                 <a class="logo-link" href="https://app.youask.in/dashboard">
@@ -226,26 +292,33 @@
                           </div> -->
                           <!-- <div class="background--custom"></div> -->
                         <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
-                            <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path0 5s linear infinite alternate;" /><path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 12.5s linear infinite alternate;" /><path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 20L-100 20Z" style="animation: path2 30s linear infinite alternate;" />
+                            <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z" style="animation: path0 5s linear infinite alternate;" /><path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z" style="animation: path1 12.5s linear infinite alternate;" /><path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 60L-100 60Z" style="animation: path2 30s linear infinite alternate;" />
                         </svg>
-                        <div class="tagline-group" data-tilt data-tilt-full-page-listening id="snap-point-header">
-                            <p class="intro-header-text" id="youask-tag-line"></p>
-                        </div>
-                        <p class="intro-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into
-                            Income. Connect, Learn, and Grow Together!
-                        </p>
-                        <form class="search-form" action="#">
-                            <div class="search-bar-group" data-aos="fade-up" data-aos-delay="100">
-                                <input class="search-bar-input">
-                                <button class="search-bar-button">
-                                    <span class="material-icons-round">search</span>
-                                </button>
+                        <div class="inner-wrapper">
+                            <div class="tagline-group" data-tilt data-tilt-full-page-listening>
+                                <p class="intro-header-text" id="youask-tag-line"></p>
                             </div>
-                        </form>
+                            <p class="intro-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into
+                                Income. Connect, Learn, and Grow Together!
+                            </p>
+                            <form class="search-form" action="#">
+                                <div class="search-bar-group" data-aos="fade-up" data-aos-delay="100">
+                                    <input class="search-bar-input">
+                                    <button class="search-bar-button">
+                                        <span class="material-icons-round">search</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="custom-shape-divider-bottom-1743417916">
+                            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                            </svg>
+                        </div>
                     </div>
                     <div class="intro-demo">
                         <div class="intro-demo-placeholder" data-aos="fade-up" data-aos-duration="500">
-                            <div class="wrapper" data-tilt></div>
+                            <div class="wrapper z-depth-4" data-tilt></div>
                         </div>
                     </div>
                 </div>
@@ -253,7 +326,7 @@
 
             <div class="section-platform-features">
                 <div class="wrapper">
-                    <div class="section-header-group">
+                    <div class="section-header-group" id="snap-point-features-header">
                         <p class="section-header-text" data-aos="fade-up">Top <span class="highlight">Highlights</span>
                             For You</p>
                         <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">We are committed to
@@ -343,8 +416,13 @@
             </div>
 
             <div class="section-persona">
+                <div class="custom-shape-divider-top-1743419769">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
                 <div class="wrapper">
-                    <div class="section-header-group">
+                    <div class="section-header-group" id="snap-point-persona-header">
                         <p class="section-header-text" data-aos="fade-up"><span class="highlight">Everything</span> For
                             <span class="highlight">Everyone</span>
                         </p>
@@ -424,8 +502,13 @@
             </div>
 
             <div class="section-categories">
+                <div class="custom-shape-divider-top-1743420009 category">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                    </svg>
+                </div>
                 <div class="wrapper">
-                    <div class="section-header-group">
+                    <div class="section-header-group" id="snap-point-category-header">
                         <p class="section-header-text" data-aos="fade-up">Comprehensive <span
                                 class="highlight">Categories</span> We Offer
                         </p>
@@ -733,6 +816,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/src/shortcuts/inview.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init();
@@ -791,6 +875,61 @@
                         $('header').addClass('sticky');
                     } else {
                         $('header').removeClass('sticky');
+                    }
+                },
+                offset: -60
+            });
+
+            var waypoint = new Waypoint.Inview({
+                element: document.getElementById('snap-point-features-header'),
+                entered: function(direction) {
+                    console.log('Entered triggered with direction ' + direction)
+                    if (direction === 'up') {
+                        $(this.element).removeClass('sticky');
+                    }
+                },
+                exit: function(direction) {
+                    console.log('Exit triggered with direction ' + direction)
+                    if (direction === 'down') {
+                        $(this.element).addClass('sticky');
+                    } else {
+                        $(this.element).removeClass('sticky');
+                    }
+                }
+            });
+
+            var waypoint = new Waypoint.Inview({
+                element: document.getElementById('snap-point-persona-header'),
+                entered: function(direction) {
+                    console.log('Entered triggered with direction ' + direction)
+                    if (direction === 'up') {
+                        $(this.element).removeClass('sticky');
+                    }
+                },
+                exit: function(direction) {
+                    console.log('Exit triggered with direction ' + direction)
+                    if (direction === 'down') {
+                        $(this.element).addClass('sticky');
+                    } else {
+                        $(this.element).removeClass('sticky');
+                    }
+                }
+            });
+
+            var waypoint = new Waypoint.Inview({
+                element: document.getElementById('snap-point-category-header'),
+                entered: function(direction) {
+                    console.log('Entered triggered with direction ' + direction)
+                    if (direction === 'up') {
+                        $(this.element).removeClass('sticky');
+                    }
+                },
+                exit: function(direction) {
+                    console.log('Exit triggered with direction ' + direction)
+                    if (direction === 'down') {
+                        $(this.element).addClass('sticky');
+                    } else {
+                        $(this.element).removeClass('sticky');
                     }
                 }
             });
