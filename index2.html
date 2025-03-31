@@ -11,8 +11,187 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="./home2.css" />
+
+    <style>
+        
+        .anim-wrapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          filter: blur(150px);
+        }
+  
+        .gradient {
+          position: absolute;
+          border-radius: 100%;
+          opacity: 0.6;
+          mix-blend-mode: screen;
+          animation-iteration-count: infinite;
+          animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
+        }
+  
+        
+    .gradient-1 {
+      background: rgb(255, 0, 0);
+      width: 700px;
+      height: 700px;
+      animation-duration: 11s;
+      opacity: 0.6;
+      left: 60%;
+      top: 40%;
+      z-index: -2;
+      animation-name: animation-gradient-1;
+    }
+    .gradient-2 {
+      background: rgb(0, 255, 0);
+      width: 600px;
+      height: 600px;
+      animation-duration: 11s;
+      opacity: 0.6;
+      left: 40%;
+      top: 60%;
+      z-index: -1;
+      animation-name: animation-gradient-2;
+    }
+    .gradient-3 {
+      background: rgb(0, 0, 255);
+      width: 500px;
+      height: 500px;
+      animation-duration: 11s;
+      opacity: 0.6;
+      left: 50%;
+      top: 50%;
+      z-index: -3;
+      animation-name: animation-gradient-3;
+    }
+  
+        @keyframes animation-gradient-1 {
+          0% {
+            transform: translateY(-50%) translateX(-50%) rotate(-20deg) translateX(20%);
+          }
+          25% {
+            transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
+              rotate(80deg) translateX(30%);
+          }
+          50% {
+            transform: translateY(-50%) translateX(-50%) rotate(180deg) translateX(25%);
+          }
+          75% {
+            transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
+              rotate(240deg) translateX(15%);
+          }
+          100% {
+            transform: translateY(-50%) translateX(-50%) rotate(340deg) translateX(20%);
+          }
+        }
+        
+        @keyframes animation-gradient-2 {
+          0% {
+            transform: translateY(-50%) translateX(-50%) rotate(40deg) translateX(-20%);
+          }
+          25% {
+            transform: translateY(-50%) translateX(-50%) skew(15deg, 15deg)
+              rotate(110deg) translateX(-5%);
+          }
+          50% {
+            transform: translateY(-50%) translateX(-50%) rotate(210deg) translateX(-35%);
+          }
+          75% {
+            transform: translateY(-50%) translateX(-50%) skew(-15deg, -15deg)
+              rotate(300deg) translateX(-10%);
+          }
+          100% {
+            transform: translateY(-50%) translateX(-50%) rotate(400deg) translateX(-20%);
+          }
+        }
+        
+        @keyframes animation-gradient-3 {
+          0% {
+            transform: translateY(-50%) translateX(-50%) translateX(-15%)
+              translateY(10%);
+          }
+          20% {
+            transform: translateY(-50%) translateX(-50%) translateX(20%)
+              translateY(-30%);
+          }
+          40% {
+            transform: translateY(-50%) translateX(-50%) translateX(-25%)
+              translateY(-15%);
+          }
+          60% {
+            transform: translateY(-50%) translateX(-50%) translateX(30%) translateY(20%);
+          }
+          80% {
+            transform: translateY(-50%) translateX(-50%) translateX(5%) translateY(35%);
+          }
+          100% {
+            transform: translateY(-50%) translateX(-50%) translateX(-15%)
+              translateY(10%);
+          }
+        }
+
+        /* .background--custom {
+      background: linear-gradient(90deg, #9c33e4, #de9e94, #cca3fd);
+      background-size: 300% 300%;
+      animation: gradient 4s alternate infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 100%;
+      }
+    } */
+
+    path {
+        transform-origin: 50% 0%;
+      }
+      .background--custom {
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        top: 0;
+        left: 0;
+      }
+      @keyframes path0 {
+        0% {
+          transform: rotate(-10deg);
+        }
+        100% {
+          transform: rotate(10deg);
+        }
+      }
+      @keyframes path1 {
+        0% {
+          transform: rotate(-30deg);
+        }
+        100% {
+          transform: rotate(30deg);
+        }
+      }
+      @keyframes path2 {
+        0% {
+          transform: rotate(40deg);
+        }
+        100% {
+          transform: rotate(-40deg);
+        }
+      }
+  
+      </style>
 </head>
 
 <body>
@@ -40,10 +219,20 @@
                 <div class="wrapper">
                     <!-- <img class="intro-bg" src="./images/bg-layer.svg"> -->
                     <div class="intro-banner">
-                        <div class="tagline-group">
+                        <!-- <div class="anim-wrapper">
+                            <div class="gradient gradient-1"></div>
+                            <div class="gradient gradient-2"></div>
+                            <div class="gradient gradient-3"></div>
+                          </div> -->
+                          <!-- <div class="background--custom"></div> -->
+                        <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
+                            <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path0 5s linear infinite alternate;" /><path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 50L-100 50Z" style="animation: path1 12.5s linear infinite alternate;" /><path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 20L-100 20Z" style="animation: path2 30s linear infinite alternate;" />
+                        </svg>
+                        <div class="tagline-group" data-tilt data-tilt-full-page-listening id="snap-point-header">
                             <p class="intro-header-text" id="youask-tag-line"></p>
                         </div>
-                        <p class="intro-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into Income. Connect, Learn, and Grow Together!
+                        <p class="intro-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into
+                            Income. Connect, Learn, and Grow Together!
                         </p>
                         <form class="search-form" action="#">
                             <div class="search-bar-group" data-aos="fade-up" data-aos-delay="100">
@@ -55,7 +244,9 @@
                         </form>
                     </div>
                     <div class="intro-demo">
-                        <div class="intro-demo-placeholder" data-aos="fade-up" data-aos-duration="500"></div>
+                        <div class="intro-demo-placeholder" data-aos="fade-up" data-aos-duration="500">
+                            <div class="wrapper" data-tilt></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,13 +254,16 @@
             <div class="section-platform-features">
                 <div class="wrapper">
                     <div class="section-header-group">
-                        <p class="section-header-text" data-aos="fade-up">Top <span class="highlight">Highlights</span> For You</p>
-                        <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">We are committed to delivering exceptional services and solutions
+                        <p class="section-header-text" data-aos="fade-up">Top <span class="highlight">Highlights</span>
+                            For You</p>
+                        <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">We are committed to
+                            delivering exceptional services and solutions
                             that make your experience seamless and rewarding.</p>
                     </div>
                     <div class="section-platform-feature-list">
                         <div class="platform-feature-item">
-                            <div class="item-sub-section feature-text-container" data-aos="fade-right" data-aos-delay="50">
+                            <div class="item-sub-section feature-text-container" data-aos="fade-right"
+                                data-aos-delay="50">
                                 <div class="feature-icon-container">
                                     <span class="material-icons-round feature-icon">videocam</span>
                                 </div>
@@ -80,8 +274,9 @@
                                         concerns, and explore solutions—all from the comfort of your space.</p>
                                 </div>
                             </div>
-                            <div class="item-sub-section feature-demo-container" data-aos="fade-left" data-aos-delay="50">
-                                <div class="feature-demo-placeholder">
+                            <div class="item-sub-section feature-demo-container" data-aos="fade-left"
+                                data-aos-delay="50">
+                                <div class="feature-demo-placeholder" data-tilt>
                                     <div class="demo"></div>
                                 </div>
                             </div>
@@ -89,7 +284,7 @@
 
                         <div class="platform-feature-item">
                             <div class="item-sub-section feature-demo-container" data-aos="fade-right">
-                                <div class="feature-demo-placeholder">
+                                <div class="feature-demo-placeholder" data-tilt>
                                     <div class="demo"></div>
                                 </div>
                             </div>
@@ -119,7 +314,7 @@
                                 </div>
                             </div>
                             <div class="item-sub-section feature-demo-container" data-aos="fade-left">
-                                <div class="feature-demo-placeholder">
+                                <div class="feature-demo-placeholder" data-tilt>
                                     <div class="demo"></div>
                                 </div>
                             </div>
@@ -127,7 +322,7 @@
 
                         <div class="platform-feature-item">
                             <div class="item-sub-section feature-demo-container" data-aos="fade-right">
-                                <div class="feature-demo-placeholder">
+                                <div class="feature-demo-placeholder" data-tilt>
                                     <div class="demo"></div>
                                 </div>
                             </div>
@@ -150,29 +345,33 @@
             <div class="section-persona">
                 <div class="wrapper">
                     <div class="section-header-group">
-                        <p class="section-header-text" data-aos="fade-up"><span class="highlight">Everything</span> For <span
-                                class="highlight">Everyone</span></p>
-                        <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">Whether you are individual or a organisation, this platform caters
+                        <p class="section-header-text" data-aos="fade-up"><span class="highlight">Everything</span> For
+                            <span class="highlight">Everyone</span>
+                        </p>
+                        <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">Whether you are individual
+                            or a organisation, this platform caters
                             to everyone needs</p>
                     </div>
                     <div class="section-content">
                         <div class="persona-switch-container">
-                            <div class="persona-button-container">
-                                <button type="button" class="persona-indvidual-button persona-button active" data-slide-to="0" data-aos="fade-up" data-aos-delay="100">
+                            <div class="persona-button-container" data-tilt>
+                                <button type="button" class="persona-indvidual-button persona-button active"
+                                    data-slide-to="0" data-aos="fade-up" data-aos-delay="100">
                                     <span class="material-icons-round persona-icon">person</span>
                                     <span>For Individual</span>
                                 </button>
                             </div>
-                            <div class="persona-button-container">
-                                <button type="button" class="persona-company-button persona-button" data-slide-to="1" data-aos="fade-up" data-aos-delay="150">
+                            <div class="persona-button-container" data-tilt>
+                                <button type="button" class="persona-company-button persona-button" data-slide-to="1"
+                                    data-aos="fade-up" data-aos-delay="150">
                                     <span class="material-icons-round persona-icon">business</span>
                                     <span>For Company</span>
                                 </button>
                             </div>
                         </div>
 
-                        <div class="persona-slider-container" data-aos="fade-left" data-aos-delay="100" data-tilt data-tilt-speed="1000">
-                            <div class="swiper personaSwiper">
+                        <div class="persona-slider-container" data-tilt data-tilt-speed="1000">
+                            <div class="swiper personaSwiper" data-aos="fade-left" data-aos-delay="100">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slide-content">
@@ -182,10 +381,13 @@
                                             <div class="persona-desc-list">
                                                 <div class="desc-item">
                                                     <div class="item-icon-wrapper">
-                                                        <span class="material-icons-round item-icon highlight">auto_awesome</span>
+                                                        <span
+                                                            class="material-icons-round item-icon highlight">auto_awesome</span>
                                                     </div>
                                                     <div class="item-text-wrapper">
-                                                        <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt alias quas laborum at ipsa !</p>
+                                                        <p class="item-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Vitae incidunt alias quas laborum at ipsa
+                                                            !</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -200,10 +402,13 @@
                                             <div class="persona-desc-list">
                                                 <div class="desc-item">
                                                     <div class="item-icon-wrapper">
-                                                        <span class="material-icons-round item-icon highlight">auto_awesome</span>
+                                                        <span
+                                                            class="material-icons-round item-icon highlight">auto_awesome</span>
                                                     </div>
                                                     <div class="item-text-wrapper">
-                                                        <p class="item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt alias quas laborum at ipsa !</p>
+                                                        <p class="item-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Vitae incidunt alias quas laborum at ipsa
+                                                            !</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -221,132 +426,154 @@
             <div class="section-categories">
                 <div class="wrapper">
                     <div class="section-header-group">
-                        <p class="section-header-text" data-aos="fade-up">Comprehensive <span class="highlight">Categories</span> We Offer
+                        <p class="section-header-text" data-aos="fade-up">Comprehensive <span
+                                class="highlight">Categories</span> We Offer
                         </p>
                     </div>
                     <div class="section-content">
                         <div class="category-grid">
-                            <div class="category-card career-guide-card" data-aos="fade-right" data-aos-delay="100" data-tilt data-tilt-speed="1000">
-                                <div class="category-image-container">
-                                    <img src="images/category-career-advice.jpg" class="category-image">
-                                </div>
-                                <div class="category-detail-container">
-                                    <div class="category-title">
-                                        <p class="title-text">Expert Guidance</p>
+
+                            <div class="category-card career-guide-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-right" data-aos-delay="100">
+                                    <div class="category-image-container">
+                                        <img src="images/category-career-advice.jpg" class="category-image">
                                     </div>
-                                    <div class="category-sub-title">
-                                        <p class="sub-title-text">Career Advice</p>
-                                    </div>
-                                    <div class="category-description">
-                                        <p class="description-text">Access tips, articles, and advice from industry
-                                            experts to navigate your career path. Learn about interview techniques,
-                                            salary negotiation, and professional development.</p>
-                                        <p class="description-text">Access tips, articles, and advice from industry
-                                            experts to navigate your career path.</p>
+                                    <div class="category-detail-container">
+                                        <div class="category-title">
+                                            <p class="title-text">Expert Guidance</p>
+                                        </div>
+                                        <div class="category-sub-title">
+                                            <p class="sub-title-text">Career Advice</p>
+                                        </div>
+                                        <div class="category-description">
+                                            <p class="description-text">Access tips, articles, and advice from industry
+                                                experts to navigate your career path. Learn about interview techniques,
+                                                salary negotiation, and professional development.</p>
+                                            <p class="description-text">Access tips, articles, and advice from industry
+                                                experts to navigate your career path.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="category-card job-referral-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="category-detail-container">
-                                    <div class="category-title">
-                                        <p class="title-text">Get refereals from experts</p>
-                                    </div>
-                                    <div class="category-sub-title">
-                                        <p class="sub-title-text">Get Referals</p>
-                                    </div>
-                                    <div class="category-description">
-                                        <p class="description-text">Leverage the expertise of instructors who are
-                                            committed to your success. With their referrals, you gain access to
-                                            exclusive job opportunities and insights that can propel your career
-                                            forward.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="category-card resume-review-card" data-aos="fade-left" data-aos-delay="100">
-                                <div class="category-detail-container">
-                                    <div class="category-title">
-                                        <p class="title-text">Find Your Next Job</p>
-                                    </div>
-                                    <div class="category-sub-title">
-                                        <p class="sub-title-text">Resume Review</p>
-                                    </div>
-                                    <div class="category-description">
-                                        <p class="description-text">In our application, instructors not only connect you
-                                            with job opportunities but also offer valuable resume review services. A
-                                            well-crafted resume is crucial in making a strong first impression on
-                                            potential employers, and our instructors are here to help you stand out.</p>
+                            <div class="category-card job-referral-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="category-detail-container">
+                                        <div class="category-title">
+                                            <p class="title-text">Get refereals from experts</p>
+                                        </div>
+                                        <div class="category-sub-title">
+                                            <p class="sub-title-text">Get Referals</p>
+                                        </div>
+                                        <div class="category-description">
+                                            <p class="description-text">Leverage the expertise of instructors who are
+                                                committed to your success. With their referrals, you gain access to
+                                                exclusive job opportunities and insights that can propel your career
+                                                forward.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="category-card mock-interview-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="category-detail-container">
-                                    <div class="category-title">
-                                        <p class="title-text">Prepare for Interview</p>
-                                    </div>
-                                    <div class="category-sub-title">
-                                        <p class="sub-title-text">Mock Interview</p>
-                                    </div>
-                                    <div class="category-description">
-                                        <p class="description-text">Use our intuitive tools and templates to create a
-                                            standout professional resume that highlights your skills and experience. Get
-                                            tips for each section to make your resume shine. </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="category-card technical-expert-card" data-aos="fade-left" data-aos-delay="100">
-                                <div class="category-image-container">
-                                    <img src="images/category-expert.png" class="category-image">
-                                </div>
-                                <div class="category-detail-container">
-                                    <div class="category-title">
-                                        <p class="title-text">Improve your Skills</p>
-                                    </div>
-                                    <div class="category-sub-title">
-                                        <p class="sub-title-text">Technical Experts</p>
-                                    </div>
-                                    <div class="category-description">
-                                        <p class="description-text">we pride ourselves on having a team of technical
-                                            experts who bring deep knowledge and cutting-edge skills to solve even the
-                                            most complex challenges.</p>
+                            <div class="category-card resume-review-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-left" data-aos-delay="100">
+                                    <div class="category-detail-container">
+                                        <div class="category-title">
+                                            <p class="title-text">Find Your Next Job</p>
+                                        </div>
+                                        <div class="category-sub-title">
+                                            <p class="sub-title-text">Resume Review</p>
+                                        </div>
+                                        <div class="category-description">
+                                            <p class="description-text">In our application, instructors not only connect
+                                                you
+                                                with job opportunities but also offer valuable resume review services. A
+                                                well-crafted resume is crucial in making a strong first impression on
+                                                potential employers, and our instructors are here to help you stand out.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="category-card job-position-guide" data-aos="fade-up" data-aos-delay="100">
-                                <div class="category-image-container">
-                                    <img src="images/category-position-guide.png" class="category-image">
-                                </div>
-                                <div class="category-detail-container">
-                                    <div class="category-title">
-                                        <p class="title-text">Know your role</p>
-                                    </div>
-                                    <div class="category-sub-title">
-                                        <p class="sub-title-text">Job position Guide</p>
-                                    </div>
-                                    <div class="category-description">
-                                        <p class="description-text">Whether you need personalized direction for your
-                                            career, business, or specific projects, our experienced guides are here to
-                                            provide tailored advice and support to help you succeed.</p>
+                            <div class="category-card mock-interview-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="category-detail-container">
+                                        <div class="category-title">
+                                            <p class="title-text">Prepare for Interview</p>
+                                        </div>
+                                        <div class="category-sub-title">
+                                            <p class="sub-title-text">Mock Interview</p>
+                                        </div>
+                                        <div class="category-description">
+                                            <p class="description-text">Use our intuitive tools and templates to create
+                                                a
+                                                standout professional resume that highlights your skills and experience.
+                                                Get
+                                                tips for each section to make your resume shine. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="category-summary-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="category-summary-title">
-                                    <p class="summary-title-text">Be a part of the community</p>
+                            <div class="category-card technical-expert-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-left" data-aos-delay="100">
+                                    <div class="category-image-container">
+                                        <img src="images/category-expert.png" class="category-image">
+                                    </div>
+                                    <div class="category-detail-container">
+                                        <div class="category-title">
+                                            <p class="title-text">Improve your Skills</p>
+                                        </div>
+                                        <div class="category-sub-title">
+                                            <p class="sub-title-text">Technical Experts</p>
+                                        </div>
+                                        <div class="category-description">
+                                            <p class="description-text">we pride ourselves on having a team of technical
+                                                experts who bring deep knowledge and cutting-edge skills to solve even
+                                                the
+                                                most complex challenges.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="category-description">
-                                    <p class="description-text">Signup now and create your free account. </p>
+                            </div>
+
+                            <div class="category-card job-position-guide" data-tilt>
+                                <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="category-image-container">
+                                        <img src="images/category-position-guide.png" class="category-image">
+                                    </div>
+                                    <div class="category-detail-container">
+                                        <div class="category-title">
+                                            <p class="title-text">Know your role</p>
+                                        </div>
+                                        <div class="category-sub-title">
+                                            <p class="sub-title-text">Job position Guide</p>
+                                        </div>
+                                        <div class="category-description">
+                                            <p class="description-text">Whether you need personalized direction for your
+                                                career, business, or specific projects, our experienced guides are here
+                                                to
+                                                provide tailored advice and support to help you succeed.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="category-summary-link-container">
-                                    <a href="https://app.youask.in/register" class="summary-link">
-                                        <span>Start your amazing journey</span>
-                                        <span class="material-icons-round">rocket_launch</span>
-                                    </a>
+                            </div>
+
+                            <div class="category-summary-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="category-summary-title">
+                                        <p class="summary-title-text">Be a part of the community</p>
+                                    </div>
+                                    <div class="category-description">
+                                        <p class="description-text">Signup now and create your free account. </p>
+                                    </div>
+                                    <div class="category-summary-link-container">
+                                        <a href="https://app.youask.in/register" class="summary-link">
+                                            <span>Start your amazing journey</span>
+                                            <span class="material-icons-round">rocket_launch</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -357,8 +584,10 @@
             <div class="section-faq">
                 <div class="wrapper">
                     <div class="section-header-group">
-                        <p class="section-header-text" data-aos="fade-up"><span class="highlight">Frequently Asked Questions</span></p>
-                        <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">Have questions about YouAsk? Find quick answers to common
+                        <p class="section-header-text" data-aos="fade-up"><span class="highlight">Frequently Asked
+                                Questions</span></p>
+                        <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">Have questions about
+                            YouAsk? Find quick answers to common
                             questions below.</p>
                     </div>
                     <div class="section-content">
@@ -445,7 +674,8 @@
                         </a>
                     </div>
                     <div class="footer-app-brief-container">
-                        <p class="footer-app-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into Income. Connect, Learn, and Grow
+                        <p class="footer-app-brief-text" data-aos="fade-up" data-aos-delay="50">Turn Your Knowledge into
+                            Income. Connect, Learn, and Grow
                             Together!</p>
                     </div>
                     <div class="footer-app-social-link-container">
@@ -473,19 +703,24 @@
                             <p class="footer-app-section-links-title">Company</p>
                         </div>
                         <div class="footer-company-link-container">
-                            <div data-aos="fade-up" data-aos-delay="50"><a href="#" class="footer-company-link">About</a></div>
-                            <div data-aos="fade-up" data-aos-delay="100"><a href="#" class="footer-company-link">Contact</a></div>
+                            <div data-aos="fade-up" data-aos-delay="50"><a href="#"
+                                    class="footer-company-link">About</a></div>
+                            <div data-aos="fade-up" data-aos-delay="100"><a href="#"
+                                    class="footer-company-link">Contact</a></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="footer-section footer-policy-section">
                 <div>
-                    <p class="footer-copyright-text" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="footer">© 2025 YouAsk. All rights reserved.</p>
+                    <p class="footer-copyright-text" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="footer">©
+                        2025 YouAsk. All rights reserved.</p>
                 </div>
                 <div class="footer-policy-link-container">
-                    <a href="#" class="footer-policy-link" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="footer">Privacy Policy</a>
-                    <a href="#" class="footer-policy-link" data-aos="fade-up" data-aos-delay="150" data-aos-anchor="footer">Terms ofService</a>
+                    <a href="#" class="footer-policy-link" data-aos="fade-up" data-aos-delay="150"
+                        data-aos-anchor="footer">Privacy Policy</a>
+                    <a href="#" class="footer-policy-link" data-aos="fade-up" data-aos-delay="150"
+                        data-aos-anchor="footer">Terms ofService</a>
                 </div>
             </div>
         </div>
@@ -497,6 +732,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js "></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init();
@@ -533,20 +769,36 @@
                 },
             });
 
-            $('.persona-button').on('click', function(e) {
+            $('.persona-button').on('click', function (e) {
                 $('.persona-button').removeClass('active');
                 $(this).addClass('active');
 
                 swiper.slideTo(parseInt($(this).data('slideTo')), 600, false);
             });
 
-            swiper.on("slideChange", function(e) {
+            swiper.on("slideChange", function (e) {
                 $('.persona-button').removeClass('active');
                 $(`.persona-button[data-slide-to="${swiper.activeIndex}"]`).addClass('active');
             });
+
+
+
+            var waypoint = new Waypoint({
+                element: document.getElementById('snap-point-header'),
+                handler: function(direction) {
+                    console.log('Basic waypoint triggered', direction);
+                    if (direction === 'down') {
+                        $('header').addClass('sticky');
+                    } else {
+                        $('header').removeClass('sticky');
+                    }
+                }
+            });
+
+
         });
     </script>
-    <script data-who="💎 Made with naker.io 💎" src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js" data-option="{|environment|:{|gradient|:|horizontal|,|sensitivity|:0.8,|colorStart|:[50,22,103,1],|colorEnd|:[20,86,205,1]},|particle|:{|life|:5,|power|:0.01,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:244,|colorStart|:[116,129,92,0.13],|colorEnd|:[198,188,107,0.52],|sizeStart|:1.57,|sizeEnd|:3.14,|direction1|:{|x|:100,|y|:100,|z|:100},|direction2|:{|x|:-100,|y|:-100,|z|:-100}},|waterMark|:false}" data-container="youask-intro"></script>
+    <!-- <script data-who="💎 Made with naker.io 💎" src="https://d23jutsnau9x47.cloudfront.net/back/v1.0.9/viewer.js" data-option="{|environment|:{|gradient|:|horizontal|,|sensitivity|:0.8,|colorStart|:[50,22,103,1],|colorEnd|:[20,86,205,1]},|particle|:{|life|:5,|power|:0.01,|texture|:|https://res.cloudinary.com/naker-io/image/upload/v1566560053/circle_05.png|,|number|:244,|colorStart|:[116,129,92,0.13],|colorEnd|:[198,188,107,0.52],|sizeStart|:1.57,|sizeEnd|:3.14,|direction1|:{|x|:100,|y|:100,|z|:100},|direction2|:{|x|:-100,|y|:-100,|z|:-100}},|waterMark|:false}" data-container="youask-intro"></script> -->
 </body>
 
 </html>
