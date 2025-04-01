@@ -741,8 +741,7 @@
             });
 
 
-
-            var waypoint = new Waypoint.Sticky({
+            var waypoint = new Waypoint({
                 element: document.getElementById('snap-point-header'),
                 handler: function (direction) {
                     console.log('Basic waypoint triggered', direction);
@@ -755,7 +754,7 @@
                 offset: -60
             });
 
-            var waypoint = new Waypoint.Inview({
+            var waypoint2 = new Waypoint.Inview({
                 element: document.getElementById('snap-point-features-header'),
                 entered: function (direction) {
                     console.log('Entered triggered with direction ' + direction)
@@ -773,7 +772,7 @@
                 }
             });
 
-            var waypoint = new Waypoint.Inview({
+            var waypoint3 = new Waypoint.Inview({
                 element: document.getElementById('snap-point-persona-header'),
                 entered: function (direction) {
                     console.log('Entered triggered with direction ' + direction)
@@ -791,7 +790,7 @@
                 }
             });
 
-            var waypoint = new Waypoint.Inview({
+            var waypoint4 = new Waypoint.Inview({
                 element: document.getElementById('snap-point-category-header'),
                 entered: function (direction) {
                     console.log('Entered triggered with direction ' + direction)
