@@ -1018,6 +1018,7 @@ footer>.wrapper {
 
 
     header>.wrapper {
+        height: 100%;
         padding: 14px 10px;
         display: flex;
         justify-content: space-between;
@@ -1025,7 +1026,7 @@ footer>.wrapper {
     }
 
     header.sticky>.wrapper {
-        padding: 4px 10px;
+        padding: 0px 10px;
     }
 
     header .logo-image {
@@ -1091,7 +1092,7 @@ footer>.wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
         width: 100%;
     }
 
@@ -1127,7 +1128,7 @@ footer>.wrapper {
     .section-intro .search-bar-group {
         display: flex;
         align-items: center;
-        background: #E4EBFA;
+        /* background: #E4EBFA; */
         width: 90vw;
         height: 48px;
         border-radius: 40px;
@@ -1166,7 +1167,7 @@ footer>.wrapper {
     }
 
     .section-intro .intro-demo {
-        margin-top: -200px;
+        margin-top: -350px;
         position: relative;
         display: flex;
         justify-content: center;
@@ -1192,7 +1193,7 @@ footer>.wrapper {
     .section-platform-features {
         position: relative;
         z-index: 5;
-        background-color: #F1FFFF;
+        /* background-color: #F1FFFF; */
         margin-top: -30px;
 
         /*   border-radius: 0 0 60px 60px; */
@@ -1218,7 +1219,7 @@ footer>.wrapper {
         align-items: center;
         /*   background-color: #fff; */
         gap: 16px;
-        padding: 10px 0;
+        padding: 10px 10px;
     }
 
     .section-header-group.sticky {
@@ -1231,6 +1232,12 @@ footer>.wrapper {
         font-size: 24px;
         line-height: 30px;
         letter-spacing: 0%;
+        text-align: center;
+    }
+    
+    .section-header-group.sticky .section-header-text {
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .highlight {
@@ -1482,7 +1489,7 @@ footer>.wrapper {
         border-radius: 16px;
         overflow: hidden;
         box-shadow: 0px 0px 24px 0px #1a5efc08;
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .section-categories .category-card>.wrapper:hover {
@@ -1513,7 +1520,7 @@ footer>.wrapper {
     }
 
     .category-card .category-sub-title .sub-title-text {
-        font-size: 24px;
+        font-size: 20px;
         background: linear-gradient(90deg, #2762EB 0%, #6448ED 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1530,7 +1537,7 @@ footer>.wrapper {
     }
 
     .category-card.career-guide-card .category-detail-container {
-        padding: 0 36px;
+        padding: 0 16px 10px 16px;
     }
 
     .category-card.job-referral-card {
