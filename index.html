@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video-js.min.css " rel="stylesheet">
 
     <link rel="stylesheet" href="./home2.css" />
 
@@ -220,7 +221,12 @@
                             <div class="item-sub-section feature-demo-container" data-aos="fade-left"
                                 data-aos-delay="50">
                                 <div class="feature-demo-placeholder" data-tilt>
-                                    <div class="demo"></div>
+                                    <div class="demo" style="overflow: hidden;">
+                                        <video autoplay class="snap-video" loop>
+                                            <source src="videos/demo.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +234,29 @@
                         <div class="platform-feature-item">
                             <div class="item-sub-section feature-demo-container" data-aos="fade-right">
                                 <div class="feature-demo-placeholder" data-tilt>
-                                    <div class="demo"></div>
+                                    <div class="demo" style="overflow: hidden;">
+                                        <video autoplay class="snap-video" loop>
+                                            <source src="videos/availability.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                        <!-- <video
+                                            id="my-video"
+                                            class="video-js"
+                                            controls
+                                            preload="auto"
+                                            width="628"
+                                            height="430"
+                                            poster="/images/youask-medium.svg"
+                                            data-setup="{}"
+                                        >
+                                            <source src="videos/slots3.mp4" type="video/mp4" />
+                                            <p class="vjs-no-js">
+                                                To view this video please enable JavaScript, and consider upgrading to a
+                                                web browser that
+                                                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                                            </p>
+                                        </video> -->
+                                    </div>
                                 </div>
                             </div>
                             <div class="item-sub-section feature-text-container" data-aos="fade-left">
@@ -258,7 +286,12 @@
                             </div>
                             <div class="item-sub-section feature-demo-container" data-aos="fade-left">
                                 <div class="feature-demo-placeholder" data-tilt>
-                                    <div class="demo"></div>
+                                    <div class="demo">
+                                        <video autoplay class="snap-video" loop>
+                                            <source src="videos/timeline-2.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +299,9 @@
                         <div class="platform-feature-item">
                             <div class="item-sub-section feature-demo-container" data-aos="fade-right">
                                 <div class="feature-demo-placeholder" data-tilt>
-                                    <div class="demo"></div>
+                                    <div class="demo">
+                                        <img src="videos/referral.avif" height="400">
+                                    </div>
                                 </div>
                             </div>
                             <div class="item-sub-section feature-text-container" data-aos="fade-left">
@@ -391,7 +426,7 @@
                             <div class="category-card career-guide-card" data-tilt>
                                 <div class="wrapper" data-aos="fade-right" data-aos-delay="100">
                                     <div class="category-image-container">
-                                        <img src="images/category-career-advice.jpg" class="category-image">
+                                        <img src="videos/career-guide.jpg" class="category-image">
                                     </div>
                                     <div class="category-detail-container">
                                         <div class="category-title">
@@ -430,22 +465,20 @@
                                 </div>
                             </div>
 
-                            <div class="category-card resume-review-card" data-tilt>
-                                <div class="wrapper" data-aos="fade-left" data-aos-delay="100">
+                            <div class="category-card job-position-guide" data-tilt>
+                                <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
                                     <div class="category-detail-container">
                                         <div class="category-title">
-                                            <p class="title-text">Find Your Next Job</p>
+                                            <p class="title-text">Job position Guide</p>
                                         </div>
                                         <div class="category-sub-title">
-                                            <p class="sub-title-text">Resume Review</p>
+                                            <p class="sub-title-text">Know your role</p>
                                         </div>
                                         <div class="category-description">
-                                            <p class="description-text">In our application, instructors not only connect
-                                                you
-                                                with job opportunities but also offer valuable resume review services. A
-                                                well-crafted resume is crucial in making a strong first impression on
-                                                potential employers, and our instructors are here to help you stand out.
-                                            </p>
+                                            <p class="description-text">Whether you need personalized direction for your
+                                                career, business, or specific projects, our experienced guides are here
+                                                to
+                                                provide tailored advice and support to help you succeed.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -455,10 +488,10 @@
                                 <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
                                     <div class="category-detail-container">
                                         <div class="category-title">
-                                            <p class="title-text">Prepare for Interview</p>
+                                            <p class="title-text">Mock Interview</p>
                                         </div>
                                         <div class="category-sub-title">
-                                            <p class="sub-title-text">Mock Interview</p>
+                                            <p class="sub-title-text">Prepare for Interview</p>
                                         </div>
                                         <div class="category-description">
                                             <p class="description-text">Use our intuitive tools and templates to create
@@ -474,14 +507,14 @@
                             <div class="category-card technical-expert-card" data-tilt>
                                 <div class="wrapper" data-aos="fade-left" data-aos-delay="100">
                                     <div class="category-image-container">
-                                        <img src="images/category-expert.png" class="category-image">
+                                        <img src="videos/technical-expert.jpg" class="category-image">
                                     </div>
                                     <div class="category-detail-container">
                                         <div class="category-title">
-                                            <p class="title-text">Improve your Skills</p>
+                                            <p class="title-text">Technical Experts</p>
                                         </div>
                                         <div class="category-sub-title">
-                                            <p class="sub-title-text">Technical Experts</p>
+                                            <p class="sub-title-text">Improve your Skills</p>
                                         </div>
                                         <div class="category-description">
                                             <p class="description-text">we pride ourselves on having a team of technical
@@ -493,23 +526,23 @@
                                 </div>
                             </div>
 
-                            <div class="category-card job-position-guide" data-tilt>
-                                <div class="wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <div class="category-card resume-review-card" data-tilt>
+                                <div class="wrapper" data-aos="fade-left" data-aos-delay="100">
                                     <div class="category-image-container">
-                                        <img src="images/category-position-guide.png" class="category-image">
+                                        <img src="videos/resume-review.jpg" class="category-image">
                                     </div>
                                     <div class="category-detail-container">
                                         <div class="category-title">
-                                            <p class="title-text">Know your role</p>
+                                            <p class="title-text">Find Your Next Job</p>
                                         </div>
                                         <div class="category-sub-title">
-                                            <p class="sub-title-text">Job position Guide</p>
+                                            <p class="sub-title-text">Resume Review</p>
                                         </div>
                                         <div class="category-description">
-                                            <p class="description-text">Whether you need personalized direction for your
-                                                career, business, or specific projects, our experienced guides are here
-                                                to
-                                                provide tailored advice and support to help you succeed.</p>
+                                            <p class="description-text">A
+                                                well-crafted resume is crucial in making a strong first impression on
+                                                potential employers, and our instructors are here to help you stand out.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -689,6 +722,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/src/shortcuts/inview.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js "></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             AOS.init();
@@ -738,6 +772,21 @@
             swiper.on("slideChange", function (e) {
                 $('.persona-button').removeClass('active');
                 $(`.persona-button[data-slide-to="${swiper.activeIndex}"]`).addClass('active');
+            });
+
+            document.querySelectorAll('.snap-video').forEach(element => {
+                new Waypoint({
+                    element: element,
+                    handler: function (direction) {
+                        console.log('Basic waypoint triggered', direction, this.element);
+                        if (direction === 'down') {
+                            this.element.pause();
+                        } else {
+                            this.element.play();
+                        }
+                    },
+                    // offset: -60
+                });
             });
 
 

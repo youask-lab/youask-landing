@@ -370,16 +370,18 @@ section>.wrapper {}
     width: 628px;
     height: 430px;
     border-radius: 16px;
-    background: linear-gradient(245.34deg, #DFD3F9 0.33%, #CFDBF9 99.67%);
+    /* background: linear-gradient(245.34deg, #DFD3F9 0.33%, #CFDBF9 99.67%); */
     padding: 5px;
 }
 
 .platform-feature-item .feature-demo-container .feature-demo-placeholder .demo {
-    background-color: #eee;
+    background-color: #fff;
     border: 3px solid #fff;
     border-radius: 12px;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .section-persona {
@@ -593,13 +595,13 @@ section>.wrapper {}
     padding: 22px 16px;
 }
 
-.category-card.resume-review-card {
+.category-card.job-position-guide {
     order: 3;
     grid-column: 4/5;
     grid-row: 1/5;
 }
 
-.category-card.resume-review-card>.wrapper {
+.category-card.job-position-guide>.wrapper {
     padding: 22px 16px;
 }
 
@@ -613,18 +615,30 @@ section>.wrapper {}
     padding: 22px 16px;
 }
 
-.category-card.job-position-guide {
+.category-card.resume-review-card {
     order: 5;
     grid-row: 8/14;
 }
 
-.category-card.job-position-guide .category-detail-container {
+.category-card.resume-review-card .category-detail-container {
     padding: 0px 16px 10px 16px;
+}
+
+.category-card.resume-review-card .category-image {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0 0 12px 12px;
 }
 
 .category-card.technical-expert-card {
     order: 6;
     grid-row: 8/14;
+}
+
+.category-card.technical-expert-card .category-image {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 0 0 12px 12px;
 }
 
 .category-card.technical-expert-card .category-detail-container {
@@ -1262,12 +1276,14 @@ footer>.wrapper {
         gap: 64px;
         padding-right: 10px;
         padding-left: 10px;
+        width: 100vw;
     }
 
     .section-platform-feature-list .platform-feature-item {
         display: flex;
         flex-direction: column;
         gap: 40px;
+        width: 100%;
     }
 
     .platform-feature-item .item-sub-section {
@@ -1324,16 +1340,25 @@ footer>.wrapper {
         width: 100%;
         height: 250px;
         border-radius: 16px;
-        background: linear-gradient(245.34deg, #DFD3F9 0.33%, #CFDBF9 99.67%);
+/*         background: linear-gradient(245.34deg, #DFD3F9 0.33%, #CFDBF9 99.67%); */
         padding: 5px;
     }
 
     .platform-feature-item .feature-demo-container .feature-demo-placeholder .demo {
-        background-color: #eee;
         border: 3px solid #fff;
         border-radius: 12px;
         width: 100%;
         height: 100%;
+    }
+    
+    .platform-feature-item .feature-demo-container .feature-demo-placeholder video {
+        width: 100%;
+    }
+    
+    .platform-feature-item .feature-demo-container .feature-demo-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .section-persona {
@@ -1550,13 +1575,13 @@ footer>.wrapper {
         padding: 22px 16px;
     }
 
-    .category-card.resume-review-card {
+    .category-card.job-position-guide {
         order: 3;
         grid-column: 4/5;
         grid-row: 1/5;
     }
 
-    .category-card.resume-review-card>.wrapper {
+    .category-card.job-position-guide>.wrapper {
         padding: 22px 16px;
     }
 
@@ -1570,12 +1595,12 @@ footer>.wrapper {
         padding: 22px 16px;
     }
 
-    .category-card.job-position-guide {
+    .category-card.resume-review-card {
         order: 5;
         grid-row: 8/14;
     }
 
-    .category-card.job-position-guide .category-detail-container {
+    .category-card.resume-review-card .category-detail-container {
         padding: 0px 16px 10px 16px;
     }
 
