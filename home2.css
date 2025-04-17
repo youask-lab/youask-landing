@@ -581,6 +581,15 @@ section>.wrapper {}
     grid-row: 1/10;
 }
 
+.category-card.career-guide-card .category-image-container {
+    height: 70%;
+}
+
+.category-card.career-guide-card .category-image {
+    max-height: 100%;
+    object-fit: cover;
+}
+
 .category-card.career-guide-card .category-detail-container {
     padding: 0 36px;
 }
