@@ -236,6 +236,12 @@ section>.wrapper {}
     width: 100%;
     background-color: #eee;
     border-radius: 20px;
+    overflow: hidden;
+}
+
+.section-intro .intro-demo .intro-demo-placeholder>.wrapper video {
+    width: 100%;
+    height: 100%;
 }
 
 .section-platform-features {

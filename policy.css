@@ -1,0 +1,25 @@
+section {
+    
+}
+
+section>.wrapper {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-parent {
+/*     margin-left: auto; */
+    max-width: 800px;
+    margin-left: calc((100% - 800px)/2 - 200px);
+/*     margin: 0 auto; */
+}
+
+.table-of-content-section {
+    position: sticky;
+    top: 100px;
+    width: 200px;
+    height: fit-content;
+/*     float: right; */
+}
