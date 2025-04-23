@@ -91,7 +91,11 @@ header .header-app-signup-link {
 
 
 
-
+.highlight {
+    background: linear-gradient(90deg, #2762EB 0%, #6448ED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 footer {}
@@ -103,7 +107,7 @@ footer>.wrapper {
     padding-right: 80px;
     padding-bottom: 32px;
     padding-left: 80px;
-    background-color: #fff;
+    background-color: #EEF2FC;
 }
 
 .footer-section {

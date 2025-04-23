@@ -1,0 +1,131 @@
+section {}
+
+section>.wrapper {
+    display: flex;
+    margin-top: 60px;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+section>.wrapper>.header {
+    text-align: center;
+}
+
+section>.wrapper>.header h2 {
+    font-size: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    box-shadow: none;
+    border: none;
+}
+
+.faq-list .faq-item {
+    background: #fff;
+    border-radius: 16px;
+}
+
+.faq-item .collapsible-header {
+    width: 805px;
+    height: 80px;
+    padding: 24px;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item .collapsible-header .faq-collapse-icon {
+    transition: 0.2s linear all;
+}
+
+.faq-item .collapsible-header .faq-collapse-icon.expanded {
+    rotate: 45deg;
+}
+
+.faq-item .collapsible-body {
+    width: 805px;
+    border: none;
+    padding-top: 0;
+}
+
+.faq-item .faq-question-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.faq-item .faq-answer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: #4B5563;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .faq-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .section-faq .faq-list .faq-item {
+        background: #fff;
+        border-radius: 16px;
+    }
+
+    .faq-item .collapsible-header {
+        width: 90vw;
+        height: 80px;
+        padding: 24px;
+        border: none;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-item .collapsible-header .faq-collapse-icon {
+        transition: 0.2s linear all;
+    }
+
+    .faq-item .collapsible-header .faq-collapse-icon.expanded {
+        rotate: 45deg;
+    }
+
+    .faq-item .collapsible-body {
+        width: 90vw;
+        border: none;
+        padding-top: 0;
+    }
+
+    .faq-item .faq-question-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+    }
+
+    .faq-item .faq-answer-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0%;
+        color: #4B5563;
+    }
+}

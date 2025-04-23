@@ -1,25 +1,52 @@
-section {
-    
-}
+section {}
 
 section>.wrapper {
     display: flex;
     margin-top: 60px;
     justify-content: center;
     gap: 20px;
+    padding-bottom: 20px;
 }
 
 .main-parent {
-/*     margin-left: auto; */
+    /*     margin-left: auto; */
     max-width: 800px;
     margin-left: calc((100% - 800px)/2 - 200px);
-/*     margin: 0 auto; */
+    /*     margin: 0 auto; */
 }
+
+.sub-section .header h2 {
+    color: #555;
+    line-height: 1.6;
+    font-size: 42px;
+}
+
+.sub-section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-section .content p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.sub-section .content ul {
+    padding-left: 20px;
+}
+
+.sub-section .content ul li {
+    color: #555;
+    line-height: 1.6;
+    list-style-type: disc;
+}
+
 
 .table-of-content-section {
     position: sticky;
     top: 100px;
     width: 200px;
     height: fit-content;
-/*     float: right; */
+    /*     float: right; */
 }
