@@ -1,3 +1,7 @@
+.highlight {
+    font-weight: bold;
+}
+
 section {
     min-height: 60vh;
     margin-top: 60px;
@@ -10,7 +14,7 @@ section>.wrapper {
     align-items: center;
     gap: 20px;
     padding-bottom: 20px;
-    height: 60vh;
+    min-height: 60vh;
 }
 
 section .sub-section {
@@ -26,6 +30,12 @@ section .sub-section {
 .sub-section .header h2 {
     font-size: 40px;
     margin: 0;
+}
+
+.about-section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact-section {

@@ -641,7 +641,7 @@ section>.wrapper {}
 
 .category-card.resume-review-card .category-image {
     height: 220px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0 0 12px 12px;
 }
 
@@ -652,7 +652,7 @@ section>.wrapper {}
 
 .category-card.technical-expert-card .category-image {
     height: 220px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 0 0 12px 12px;
 }
 
