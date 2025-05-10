@@ -1,0 +1,61 @@
+# robots.txt for YouAsk Platform
+# Last updated: 2024
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://youask.in/sitemap.xml
+
+# Disallow sensitive directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /user/settings/
+Disallow: /user/profile/
+Disallow: /user/password/
+Disallow: /user/email/
+Disallow: /api/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /draft/
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+
+# Disallow specific file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.env$
+Disallow: /*.config$
+Disallow: /*.ini$
+Disallow: /*.bak$
+Disallow: /*.old$
+Disallow: /*.tmp$
+
+# Allow specific service pages
+Allow: /services/job-referral
+Allow: /services/job-position-guide
+Allow: /services/technical-experts
+Allow: /services/career-guidance
+Allow: /services/resume-review
+Allow: /services/mock-interview
+
+# Allow public profile pages
+Allow: /expert/
+Allow: /company/
+
+# Allow blog and content pages
+Allow: /blog/
+Allow: /articles/
+Allow: /resources/
+Allow: /faq/
+Allow: /about/
+Allow: /contact/
+
+# Crawl delay for all bots
+Crawl-delay: 10 
