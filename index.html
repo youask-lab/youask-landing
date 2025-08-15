@@ -168,7 +168,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video-js.min.css " rel="stylesheet">
     <link rel="stylesheet" href="./index.css" />
 
@@ -970,7 +970,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
     <!-- <script src=" https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js "></script>
@@ -981,6 +981,8 @@
     <script src=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js "></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // AOS.init({disable: "mobile"});
+
             var typed = new Typed('#youask-tag-line', {
                 strings: ['Connect . Learn . Monetize'],
                 typeSpeed: 50,
@@ -1077,8 +1079,6 @@
                     pinSpacing: false,
                 });
             });
-
-            AOS.init({disable: "mobile"});
         });
     </script>
 </body>
