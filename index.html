@@ -1035,6 +1035,7 @@
                 start: 'top 0px',
                 pin: true,
                 end: 99999,
+                scrub: 1,
                 pinSpacing: false,
             });
 
@@ -1042,6 +1043,7 @@
                 trigger: document.body,
                 start: 'top -20px',
                 end: 99999,
+                scrub: 1,
                 toggleClass: {
                     className: 'scrolled',
                     targets: 'header'
@@ -1052,6 +1054,7 @@
                 trigger: '#snap-product-demo',
                 start: 'bottom bottom',
                 end: 'top 50px',
+                scrub: 1,
                 onEnter: (self) => {
                     demoVideoScroller.refresh();
                     self.trigger.play();
@@ -1076,6 +1079,7 @@
                     start: 'top 56px',
                     end: 99999,
                     toggleClass: "sticky",
+                    scrub: 1,
                     pinSpacing: false,
                 });
             });
