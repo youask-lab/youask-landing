@@ -170,7 +170,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video-js.min.css " rel="stylesheet">
-    <link rel="stylesheet" href="./home2.css" />
+    <link rel="stylesheet" href="./index.css" />
 
     <style>
         path {
@@ -311,16 +311,7 @@
                 <div class="wrapper">
                     <!-- <img class="intro-bg" src="./images/bg-layer.svg"> -->
                     <div class="intro-banner">
-                        <!-- <svg class="background--custom" id="demo" viewBox="0 0 100 100" preserveAspectRatio="none">
-                            <path fill="#FFFF00" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z"
-                                style="animation: path0 5s linear infinite alternate;" />
-                            <path fill="#00FFFF" fill-opacity="0.7" d="M-100 -100L200 -100L200 70L-100 70Z"
-                                style="animation: path1 12.5s linear infinite alternate;" />
-                            <path fill="#FF00FF" fill-opacity="0.2" d="M-100 -100L200 -100L200 60L-100 60Z"
-                                style="animation: path2 30s linear infinite alternate;" />
-                        </svg> -->
                         <div class="inner-wrapper">
-                            <!-- <div class="glass"> -->
                             <div class="tagline-group">
                                 <p class="intro-header-text" id="youask-tag-line"></p>
                             </div>
@@ -335,7 +326,6 @@
                                     </button>
                                 </div>
                             </form>
-                            <!-- </div> -->
                         </div>
                         <div class="custom-shape-divider-bottom-1743417916">
                             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -983,13 +973,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
-    <script src=" https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/src/shortcuts/inview.js"></script>
+    <!-- <script src=" https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/src/shortcuts/inview.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js "></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            AOS.init();
-
             var typed = new Typed('#youask-tag-line', {
                 strings: ['Connect . Learn . Monetize'],
                 typeSpeed: 50,
@@ -1037,113 +1028,57 @@
                 $(`.persona-button[data-slide-to="${swiper.activeIndex}"]`).addClass('active');
             });
 
-
-            new Waypoint.Inview({
-                element: $("#snap-product-demo").get(0),
-                entered: function (direction) {
-                    console.log('Entered triggered with direction ' + direction)
-                    if (direction === 'down') {
-                        this.element.play();
-                    } else {
-                        this.element.play();
-                    }
-                },
-                exit: function (direction) {
-                    console.log('Exit triggered with direction ' + direction)
-                    if (direction === 'down') {
-                        this.element.pause();
-                    } else {
-
-                    }
-                },
-                offset: "25%"
+            ScrollTrigger.create({
+                trigger: 'header',
+                start: 'top 0px',
+                pin: true,
+                end: 99999,
+                pinSpacing: false,
             });
 
+            ScrollTrigger.create({
+                trigger: document.body,
+                start: 'top -20px',
+                end: 99999,
+                toggleClass: {
+                    className: 'scrolled',
+                    targets: 'header'
+                }
+            });
 
-            document.querySelectorAll('.snap-video').forEach(element => {
-                new Waypoint({
-                    element: element,
-                    handler: function (direction) {
-                        console.log('Basic waypoint triggered', direction, this.element);
-                        if (direction === 'down') {
-                            this.element.pause();
-                        } else {
-                            this.element.play();
-                        }
-                    },
-                    // offset: -60
+            let demoVideoScroller = ScrollTrigger.create({
+                trigger: '#snap-product-demo',
+                start: 'bottom bottom',
+                end: 'top 50px',
+                onEnter: (self) => {
+                    demoVideoScroller.refresh();
+                    self.trigger.play();
+                },
+                onEnterBack: (self) => {
+                    demoVideoScroller.refresh();
+                    self.trigger.play();
+                },
+                onLeave: (self) => {
+                    demoVideoScroller.refresh();
+                    self.trigger.pause();
+                },
+                onLeaveBack: (self) => {
+                    demoVideoScroller.refresh();
+                    self.trigger.pause();
+                },
+            });
+
+            document.querySelectorAll('.section-header-group').forEach(el => {
+                ScrollTrigger.create({
+                    trigger: el,
+                    start: 'top 56px',
+                    end: 99999,
+                    toggleClass: "sticky",
+                    pinSpacing: false,
                 });
             });
 
-
-            var waypoint = new Waypoint({
-                element: document.getElementById('snap-point-header'),
-                handler: function (direction) {
-                    console.log('Basic waypoint triggered', direction);
-                    if (direction === 'down') {
-                        $('header').addClass('sticky');
-                    } else {
-                        $('header').removeClass('sticky');
-                    }
-                },
-                offset: -60
-            });
-
-            var waypoint2 = new Waypoint.Inview({
-                element: document.getElementById('snap-point-features-header'),
-                entered: function (direction) {
-                    console.log('Entered triggered with direction ' + direction)
-                    if (direction === 'up') {
-                        $(this.element).removeClass('sticky');
-                    }
-                },
-                exit: function (direction) {
-                    console.log('Exit triggered with direction ' + direction)
-                    if (direction === 'down') {
-                        $(this.element).addClass('sticky');
-                    } else {
-                        $(this.element).removeClass('sticky');
-                    }
-                }
-            });
-
-            var waypoint3 = new Waypoint.Inview({
-                element: document.getElementById('snap-point-persona-header'),
-                entered: function (direction) {
-                    console.log('Entered triggered with direction ' + direction)
-                    if (direction === 'up') {
-                        $(this.element).removeClass('sticky');
-                    }
-                },
-                exit: function (direction) {
-                    console.log('Exit triggered with direction ' + direction)
-                    if (direction === 'down') {
-                        $(this.element).addClass('sticky');
-                    } else {
-                        $(this.element).removeClass('sticky');
-                    }
-                }
-            });
-
-            var waypoint4 = new Waypoint.Inview({
-                element: document.getElementById('snap-point-category-header'),
-                entered: function (direction) {
-                    console.log('Entered triggered with direction ' + direction)
-                    if (direction === 'up') {
-                        $(this.element).removeClass('sticky');
-                    }
-                },
-                exit: function (direction) {
-                    console.log('Exit triggered with direction ' + direction)
-                    if (direction === 'down') {
-                        $(this.element).addClass('sticky');
-                    } else {
-                        $(this.element).removeClass('sticky');
-                    }
-                }
-            });
-
-
+            AOS.init({disable: "mobile"});
         });
     </script>
 </body>
