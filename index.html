@@ -349,7 +349,7 @@
 
             <div class="section-platform-features">
                 <div class="wrapper">
-                    <div class="section-header-group" id="snap-point-features-header">
+                    <div class="section-header-group stick" id="snap-point-features-header">
                         <p class="section-header-text" data-aos="fade-up">Top <span class="highlight">Highlights</span>
                             For You</p>
                         <p class="section-brief-text" data-aos="fade-up" data-aos-delay="50">We are dedicated to
@@ -485,7 +485,7 @@
                     </svg>
                 </div>
                 <div class="wrapper">
-                    <div class="section-header-group" id="snap-point-persona-header">
+                    <div class="section-header-group stick" id="snap-point-persona-header">
                         <p class="section-header-text" data-aos="fade-up"><span class="highlight">Everything</span> For
                             <span class="highlight">Everyone</span>
                         </p>
@@ -661,7 +661,7 @@
                     </svg>
                 </div>
                 <div class="wrapper">
-                    <div class="section-header-group" id="snap-point-category-header">
+                    <div class="section-header-group stick" id="snap-point-category-header">
                         <p class="section-header-text" data-aos="fade-up">Comprehensive <span
                                 class="highlight">Categories</span> We Offer
                         </p>
@@ -980,8 +980,9 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js "></script>
     <script>
-        var demoVideoScroller;
         document.addEventListener('DOMContentLoaded', function () {
+            let demoVideoScroller;
+            let headerScrollers = [];
             // AOS.init({disable: "mobile"});
 
             // Load video
@@ -1054,46 +1055,77 @@
                 }
             });
 
+            document.querySelectorAll('.section-header-group.stick').forEach(el => {
+                headerScrollers.push(
+                    ScrollTrigger.create({
+                        trigger: el,
+                        start: 'top 56px',
+                        endTrigger: 'body',
+                        end: "bottom bottom",
+                        scrub: 1,
+                        pinSpacing: false,
+                        onEnter: (self) => {
+                            self.refresh();
+                            $(self.trigger).addClass("sticky");
+                        },
+                        onLeaveBack: (self) => {
+                            self.refresh();
+                            $(self.trigger).removeClass("sticky");
+                        },
+                        onLeave: (self) => {
+                            self.refresh();
+                        },
+                        onEnterBack: (self) => {
+                            self.refresh();
+                            $(self.trigger).removeClass("sticky");
+                        }
+                    })
+                );
+            });
+
             demoVideoScroller = ScrollTrigger.create({
                 trigger: '#snap-product-demo',
                 start: 'bottom bottom',
                 end: 'top 50px',
                 scrub: 1,
                 onEnter: (self) => {
-                    demoVideoScroller.refresh();
+                    headerScrollers.forEach(scroller => {
+                        scroller.refresh();
+                    });
+                    if (demoVideoScroller) {
+                        demoVideoScroller.refresh();
+                    }
                     if(self.trigger.paused) {
-                        console.log("OnEnter");
+                        // console.log("OnEnter");
                         self.trigger.play();
                     }
                 },
                 onEnterBack: (self) => {
-                    demoVideoScroller.refresh();
+                    headerScrollers.forEach(scroller => {scroller.refresh()});
+                    if (demoVideoScroller) {
+                        demoVideoScroller.refresh();
+                    }
                     if(self.trigger.paused) {
-                        console.log("onEnterBack");
+                        // console.log("onEnterBack");
                         self.trigger.play();
                     }
                 },
                 onLeave: (self) => {
-                    console.log("onLeave");
-                    demoVideoScroller.refresh();
+                    headerScrollers.forEach(scroller => {scroller.refresh()});
+                    // console.log("onLeave");
+                    if (demoVideoScroller) {
+                        demoVideoScroller.refresh();
+                    }
                     self.trigger.pause();
                 },
                 onLeaveBack: (self) => {
-                    console.log("onLeaveBack");
-                    demoVideoScroller.refresh();
+                    headerScrollers.forEach(scroller => {scroller.refresh()});
+                    // console.log("onLeaveBack");
+                    if (demoVideoScroller) {
+                        demoVideoScroller.refresh();
+                    }
                     self.trigger.pause();
                 },
-            });
-
-            document.querySelectorAll('.section-header-group').forEach(el => {
-                ScrollTrigger.create({
-                    trigger: el,
-                    start: 'top 56px',
-                    end: 99999,
-                    toggleClass: "sticky",
-                    scrub: 1,
-                    pinSpacing: false,
-                });
             });
         });
     </script>
