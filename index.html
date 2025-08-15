@@ -980,8 +980,12 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
     <script src=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js "></script>
     <script>
+        var demoVideoScroller;
         document.addEventListener('DOMContentLoaded', function () {
             // AOS.init({disable: "mobile"});
+
+            // Load video
+            document.querySelector("#snap-product-demo").load();
 
             var typed = new Typed('#youask-tag-line', {
                 strings: ['Connect . Learn . Monetize'],
@@ -1050,24 +1054,32 @@
                 }
             });
 
-            let demoVideoScroller = ScrollTrigger.create({
+            demoVideoScroller = ScrollTrigger.create({
                 trigger: '#snap-product-demo',
                 start: 'bottom bottom',
                 end: 'top 50px',
                 scrub: 1,
                 onEnter: (self) => {
                     demoVideoScroller.refresh();
-                    self.trigger.play();
+                    if(self.trigger.paused) {
+                        console.log("OnEnter");
+                        self.trigger.play();
+                    }
                 },
                 onEnterBack: (self) => {
                     demoVideoScroller.refresh();
-                    self.trigger.play();
+                    if(self.trigger.paused) {
+                        console.log("onEnterBack");
+                        self.trigger.play();
+                    }
                 },
                 onLeave: (self) => {
+                    console.log("onLeave");
                     demoVideoScroller.refresh();
                     self.trigger.pause();
                 },
                 onLeaveBack: (self) => {
+                    console.log("onLeaveBack");
                     demoVideoScroller.refresh();
                     self.trigger.pause();
                 },
