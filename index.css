@@ -925,8 +925,13 @@ footer>.wrapper {
 }
 
 .footer-section .app-social-image {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-section .app-social-image.reddit {
+    width: 28px;
+    height: 28px;
 }
 
 .footer-section .footer-app-sections-container {
@@ -1892,6 +1897,11 @@ footer>.wrapper {
     .footer-section .app-social-image {
         width: 28px;
         height: 28px;
+    }
+
+    .footer-section .app-social-image.reddit {
+        width: 26px;
+        height: 26px;
     }
 
     .footer-section .footer-app-sections-container {
