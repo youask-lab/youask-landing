@@ -49,8 +49,8 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon.ico">
     <link rel="manifest" href="favicon/site.webmanifest">
     <meta name="theme-color" content="#ffffff">
 
@@ -332,16 +332,6 @@
                                 preserveAspectRatio="none">
                                 <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                             </svg>
-                        </div>
-                    </div>
-                    <div class="intro-demo">
-                        <div class="intro-demo-placeholder" data-aos="fade-up" data-aos-duration="500">
-                            <div class="wrapper z-depth-4" data-tilt>
-                                <video loop id="snap-product-demo" muted>
-                                    <source src="videos/product_demo_2.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -985,12 +975,8 @@
     <script src=" https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js "></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            let demoVideoScroller;
             let headerScrollers = [];
             // AOS.init({disable: "mobile"});
-
-            // Load video
-            document.querySelector("#snap-product-demo").load();
 
             var typed = new Typed('#youask-tag-line', {
                 strings: ['Connect . Learn . Monetize'],
@@ -1085,51 +1071,6 @@
                         }
                     })
                 );
-            });
-
-            demoVideoScroller = ScrollTrigger.create({
-                trigger: '#snap-product-demo',
-                start: 'bottom bottom',
-                end: 'top 50px',
-                scrub: 1,
-                onEnter: (self) => {
-                    headerScrollers.forEach(scroller => {
-                        scroller.refresh();
-                    });
-                    if (demoVideoScroller) {
-                        demoVideoScroller.refresh();
-                    }
-                    if(self.trigger.paused) {
-                        // console.log("OnEnter");
-                        self.trigger.play();
-                    }
-                },
-                onEnterBack: (self) => {
-                    headerScrollers.forEach(scroller => {scroller.refresh()});
-                    if (demoVideoScroller) {
-                        demoVideoScroller.refresh();
-                    }
-                    if(self.trigger.paused) {
-                        // console.log("onEnterBack");
-                        self.trigger.play();
-                    }
-                },
-                onLeave: (self) => {
-                    headerScrollers.forEach(scroller => {scroller.refresh()});
-                    // console.log("onLeave");
-                    if (demoVideoScroller) {
-                        demoVideoScroller.refresh();
-                    }
-                    self.trigger.pause();
-                },
-                onLeaveBack: (self) => {
-                    headerScrollers.forEach(scroller => {scroller.refresh()});
-                    // console.log("onLeaveBack");
-                    if (demoVideoScroller) {
-                        demoVideoScroller.refresh();
-                    }
-                    self.trigger.pause();
-                },
             });
         });
     </script>
