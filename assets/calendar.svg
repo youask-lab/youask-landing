@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Calendar time slot booking illustration">
+  <defs>
+    <linearGradient id="cl-tab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39476E"></stop>
+      <stop offset="1" stop-color="#2B3656"></stop>
+    </linearGradient>
+    <linearGradient id="cl-hdr" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5B86FF"></stop>
+      <stop offset="1" stop-color="#2E5BFF"></stop>
+    </linearGradient>
+    <linearGradient id="cl-shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6E93FF"></stop>
+      <stop offset="1" stop-color="#4F7CFF"></stop>
+    </linearGradient>
+    <radialGradient id="cl-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#DCE7FF" stop-opacity="0.9"></stop>
+      <stop offset="1" stop-color="#DCE7FF" stop-opacity="0"></stop>
+    </radialGradient>
+    
+  </defs>
+
+  
+  <g opacity="0.6">
+    <rect x="70" y="70" width="96" height="150" rx="10" fill="none" stroke="#E3EAF6" stroke-width="6"></rect>
+    <rect x="452" y="86" width="92" height="120" rx="10" fill="none" stroke="#E3EAF6" stroke-width="6"></rect>
+    <line x1="498" y1="86" x2="498" y2="206" stroke="#E3EAF6" stroke-width="5"></line>
+    <line x1="452" y1="146" x2="544" y2="146" stroke="#E3EAF6" stroke-width="5"></line>
+  </g>
+
+  
+  <ellipse cx="300" cy="372" rx="180" ry="14" fill="#1F2937" opacity="0.07"></ellipse>
+
+  
+  <g class="cl-tablet">
+    <rect x="150" y="46" width="320" height="208" rx="20" fill="url(#cl-tab)"></rect>
+    <circle cx="162" cy="150" r="4" fill="#5A6890"></circle>
+    <rect x="160" y="56" width="300" height="188" rx="8" fill="#FFFFFF"></rect>
+    
+    <path d="M160 64 a8 8 0 0 1 8 -8 h284 a8 8 0 0 1 8 8 v22 h-300 Z" fill="url(#cl-hdr)"></path>
+    <circle cx="172" cy="71" r="2.6" fill="#BFD2FF"></circle><circle cx="181" cy="71" r="2.6" fill="#BFD2FF"></circle><circle cx="190" cy="71" r="2.6" fill="#BFD2FF"></circle>
+    <text x="300" y="75" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#FFFFFF">CALENDAR</text>
+    
+    <path d="M424 73 a7 7 0 0 1 10 0 M427 76 a3.5 3.5 0 0 1 4 0" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"></path><circle cx="429" cy="79" r="1.4" fill="#FFFFFF"></circle>
+    <circle cx="446" cy="72" r="6" fill="none" stroke="#FFFFFF" stroke-width="1.5"></circle><path d="M440 72 h12 M446 66 q4 6 0 12 q-4 -6 0 -12" fill="none" stroke="#FFFFFF" stroke-width="1.2"></path>
+
+    
+    <path d="M178 100 l-6 5 l6 5" fill="none" stroke="#1F2937" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M348 100 l6 5 l-6 5" fill="none" stroke="#1F2937" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    
+    <g font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="11" font-weight="700" fill="#9AA6BE" text-anchor="middle">
+      <text x="182" y="126">S</text><text x="208" y="126">M</text><text x="234" y="126">T</text><text x="260" y="126">W</text><text x="286" y="126">T</text><text x="312" y="126">F</text><text x="338" y="126">S</text>
+    </g>
+    
+    <g class="cl-pulse" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="11" fill="#3A4256" text-anchor="middle">
+      <text x="182" y="148">1</text><text x="208" y="148">2</text><text x="234" y="148">3</text><text x="286" y="148">5</text><text x="312" y="148">6</text><text x="338" y="148">7</text>
+      <text x="182" y="170">8</text><text x="208" y="170">9</text><text x="234" y="170">10</text><text x="260" y="170">11</text><text x="286" y="170">12</text><text x="338" y="170">14</text>
+      <text x="182" y="192">15</text><text x="208" y="192">16</text><text x="234" y="192">17</text><text x="260" y="192">18</text><text x="286" y="192">19</text><text x="312" y="192">20</text><text x="338" y="192">21</text>
+      <text x="182" y="214">22</text><text x="234" y="214">24</text><text x="260" y="214">25</text><text x="286" y="214">26</text><text x="312" y="214">27</text><text x="338" y="214">28</text>
+      <text x="182" y="236">29</text><text x="208" y="236">30</text>
+    </g>
+    
+    <g class="cl-sel"><circle cx="260" cy="144" r="11" fill="#2E5BFF"></circle><text x="260" y="148" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">4</text></g>
+    
+    <g class="cl-sel2"><circle cx="312" cy="166" r="11" fill="#DCE7FF"></circle><text x="312" y="170" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="11" font-weight="700" fill="#2E5BFF">13</text></g>
+    
+    <g class="cl-sel"><circle cx="208" cy="210" r="11" fill="#DCE7FF"></circle><text x="208" y="214" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="11" font-weight="700" fill="#2E5BFF">23</text></g>
+
+    
+    <rect x="366" y="92" width="90" height="148" rx="6" fill="#2B3656"></rect>
+    <g class="cl-card1"><rect x="374" y="100" width="74" height="34" rx="6" fill="#3C4A70"></rect><circle cx="386" cy="117" r="7" fill="#4F7CFF"></circle><text x="386" y="121" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="8" font-weight="700" fill="#fff">3</text><rect x="398" y="111" width="42" height="4" rx="2" fill="#7E8AB0"></rect><rect x="398" y="120" width="30" height="4" rx="2" fill="#5C688C"></rect></g>
+    <g class="cl-card2"><rect x="374" y="140" width="74" height="34" rx="6" fill="#3C4A70"></rect><circle cx="386" cy="157" r="7" fill="#4F7CFF"></circle><text x="386" y="161" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="8" font-weight="700" fill="#fff">13</text><rect x="398" y="151" width="42" height="4" rx="2" fill="#7E8AB0"></rect><rect x="398" y="160" width="30" height="4" rx="2" fill="#5C688C"></rect></g>
+    <g class="cl-card3"><rect x="374" y="180" width="74" height="34" rx="6" fill="#3C4A70"></rect><circle cx="386" cy="197" r="7" fill="#4F7CFF"></circle><text x="386" y="201" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="8" font-weight="700" fill="#fff">23</text><rect x="398" y="191" width="42" height="4" rx="2" fill="#7E8AB0"></rect><rect x="398" y="200" width="30" height="4" rx="2" fill="#5C688C"></rect></g>
+  </g>
+
+  
+  <g class="cl-idle">
+    
+    <path d="M212 340 q40 -22 84 0 q4 14 -8 18 l-70 0 q-12 -6 -6 -18 Z" fill="#2E5BFF"></path>
+    <path d="M224 338 q26 -10 54 0" fill="none" stroke="#234BD8" stroke-width="3"></path>
+    
+    <path d="M206 352 q-8 2 -8 10 l24 0 l0 -12 Z" fill="#1B2336"></path>
+    <path d="M296 352 q8 2 8 10 l-24 0 l0 -12 Z" fill="#1B2336"></path>
+    
+    <path d="M232 320 q22 -10 44 0 l0 22 q-22 8 -44 0 Z" fill="#34436C"></path>
+    
+    <path d="M236 270 q18 -14 38 0 q8 30 4 54 q-22 10 -46 0 q-4 -30 4 -54 Z" fill="url(#cl-shirt)"></path>
+    
+    <rect x="246" y="316" width="48" height="8" rx="2" fill="#C7D4EE"></rect>
+    <rect x="252" y="296" width="38" height="22" rx="3" fill="#E8EDF5" transform="rotate(-6 271 307)"></rect>
+    
+    <path d="M242 286 q-2 18 12 24" fill="none" stroke="#4F7CFF" stroke-width="13" stroke-linecap="round"></path>
+    
+    <path d="M270 282 q24 -6 30 -34" fill="none" stroke="#5B86FF" stroke-width="13" stroke-linecap="round"></path>
+    <circle cx="302" cy="246" r="8" fill="#8D5A33"></circle>
+    
+    <rect x="250" y="252" width="13" height="14" rx="6" fill="#8D5A33"></rect>
+    <ellipse cx="255" cy="244" rx="19" ry="20" fill="#A56A43"></ellipse>
+    <path d="M236 248 q-4 -34 22 -34 q24 0 22 30 q-4 6 -10 8 q2 -18 -14 -18 q-16 0 -16 22 q-2 -4 -4 -8 Z" fill="#1F1B17"></path>
+    <path d="M236 244 q-6 18 2 34 q-10 -4 -10 -22 q0 -10 8 -12 Z" fill="#1F1B17"></path>
+  </g>
+  
+  <g fill="none" stroke="#4F7CFF" stroke-width="2.4" stroke-linecap="round" transform="translate(308 240)">
+    <path class="cl-w1" d="M2 4 a8 8 0 0 1 12 -2"></path>
+    <path class="cl-w2" d="M-1 9 a14 14 0 0 1 22 -3"></path>
+    <path class="cl-w3" d="M-4 14 a20 20 0 0 1 31 -4"></path>
+  </g>
+
+  
+  <g>
+    <path d="M474 352 l4 -28 h28 l4 28 Z" fill="#4F7CFF"></path>
+    <path d="M474 324 h36 l-2 8 h-32 Z" fill="#2E5BFF"></path>
+    <g class="cl-leaf"><path d="M492 324 q-2 -34 -18 -42 q14 22 12 42 Z" fill="#3FA46A"></path></g>
+    <g class="cl-leaf2"><path d="M492 324 q2 -36 18 -44 q-14 24 -12 44 Z" fill="#4FBF7E"></path></g>
+    <path class="cl-leaf" d="M492 326 q0 -30 0 -40 q6 24 4 40 Z" fill="#46B274"></path>
+  </g>
+</svg>
