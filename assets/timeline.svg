@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Mobile timeline profile feed illustration">
+  <defs>
+    <linearGradient id="tl-phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#39476E"></stop>
+      <stop offset="1" stop-color="#2B3656"></stop>
+    </linearGradient>
+    <linearGradient id="tl-scr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAF0FF"></stop>
+      <stop offset="1" stop-color="#DCE7FF"></stop>
+    </linearGradient>
+    <linearGradient id="tl-hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B86FF"></stop>
+      <stop offset="1" stop-color="#2E5BFF"></stop>
+    </linearGradient>
+    <linearGradient id="tl-shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6E93FF"></stop>
+      <stop offset="1" stop-color="#4F7CFF"></stop>
+    </linearGradient>
+    <clipPath id="tl-feedclip"><rect x="360" y="92" width="148" height="248" rx="4"></rect></clipPath>
+    
+  </defs>
+
+  
+  <g opacity="0.55">
+    <circle cx="132" cy="118" r="30" fill="none" stroke="#E3EAF6" stroke-width="6"></circle>
+    <path d="M132 102 v16 l10 6" fill="none" stroke="#CFD9EB" stroke-width="3.4" stroke-linecap="round"></path>
+    
+    <path d="M96 250 q-10 -56 30 -58 q40 2 30 58 Z" fill="#EEF2F8"></path>
+    <rect x="92" y="248" width="72" height="40" rx="10" fill="#E6ECF5"></rect>
+    <rect x="98" y="286" width="10" height="22" rx="4" fill="#D7DEEA"></rect>
+    <rect x="148" y="286" width="10" height="22" rx="4" fill="#D7DEEA"></rect>
+    
+    <path d="M540 312 v-150" stroke="#E0E7F2" stroke-width="6" stroke-linecap="round"></path>
+    <path d="M524 162 h32 l-8 26 h-16 Z" fill="#EEF2F8"></path>
+    <rect x="528" y="306" width="24" height="8" rx="3" fill="#E0E7F2"></rect>
+  </g>
+
+  
+  <ellipse cx="300" cy="372" rx="190" ry="14" fill="#1F2937" opacity="0.07"></ellipse>
+
+  
+  <g fill="#9DBBFF">
+    <circle class="tl-p1" cx="300" cy="150" r="4"></circle>
+    <circle class="tl-p2" cx="320" cy="120" r="3"></circle>
+    <circle class="tl-p3" cx="280" cy="110" r="2.5"></circle>
+    <circle class="tl-p4" cx="335" cy="180" r="3.5"></circle>
+  </g>
+
+  
+  <g class="tl-phonef">
+    <rect x="350" y="58" width="168" height="308" rx="30" fill="url(#tl-phone)"></rect>
+    <rect x="360" y="76" width="148" height="272" rx="16" fill="url(#tl-scr)"></rect>
+    
+    <rect x="416" y="66" width="36" height="7" rx="3.5" fill="#1F2740"></rect>
+
+    
+    <g clip-path="url(#tl-feedclip)">
+      <g class="tl-feed">
+        
+        <path d="M360 92 h148 v54 a0 0 0 0 1 0 0 h-148 Z" fill="url(#tl-hdr)"></path>
+        <rect x="370" y="100" width="16" height="14" rx="3" fill="#FFFFFF" opacity="0.85"></rect>
+        <circle cx="392" cy="128" r="15" fill="#DCE7FF"></circle>
+        <path d="M392 121 a6 6 0 1 1 0 12 a6 6 0 1 1 0 -12 M381 140 q11 -10 22 0" fill="#9DB6FF"></path>
+        <rect x="414" y="120" width="60" height="6" rx="3" fill="#FFFFFF"></rect>
+        <rect x="414" y="132" width="40" height="5" rx="2.5" fill="#BFD2FF"></rect>
+
+        
+        <rect x="370" y="156" width="128" height="46" rx="8" fill="#FFFFFF"></rect>
+        <rect x="378" y="164" width="30" height="30" rx="6" fill="#C7D7FB"></rect>
+        <path d="M383 188 l7 -8 6 5 5 -7 5 10 Z" fill="#9DB6FF"></path><circle cx="388" cy="172" r="3" fill="#9DB6FF"></circle>
+        <rect x="416" y="166" width="74" height="6" rx="3" fill="#E1E8F4"></rect>
+        <rect class="tl-bar1" x="416" y="178" width="60" height="5" rx="2.5" fill="#4F7CFF" style="--w:60px"></rect>
+        <rect x="416" y="189" width="44" height="5" rx="2.5" fill="#E1E8F4"></rect>
+
+        
+        <rect x="370" y="210" width="128" height="46" rx="8" fill="#FFFFFF"></rect>
+        <rect x="378" y="218" width="30" height="30" rx="6" fill="#C7D7FB"></rect>
+        <path d="M383 242 l7 -8 6 5 5 -7 5 10 Z" fill="#9DB6FF"></path><circle cx="388" cy="226" r="3" fill="#9DB6FF"></circle>
+        <rect x="416" y="220" width="74" height="6" rx="3" fill="#E1E8F4"></rect>
+        <rect class="tl-bar2" x="416" y="232" width="50" height="5" rx="2.5" fill="#4F7CFF" style="--w:50px"></rect>
+        <rect x="416" y="243" width="60" height="5" rx="2.5" fill="#E1E8F4"></rect>
+
+        
+        <rect x="370" y="264" width="128" height="46" rx="8" fill="#FFFFFF"></rect>
+        <rect x="378" y="272" width="30" height="30" rx="6" fill="#C7D7FB"></rect>
+        <path d="M383 296 l7 -8 6 5 5 -7 5 10 Z" fill="#9DB6FF"></path><circle cx="388" cy="280" r="3" fill="#9DB6FF"></circle>
+        <rect x="416" y="274" width="74" height="6" rx="3" fill="#E1E8F4"></rect>
+        <rect class="tl-bar3" x="416" y="286" width="54" height="5" rx="2.5" fill="#4F7CFF" style="--w:54px"></rect>
+        <rect x="416" y="297" width="40" height="5" rx="2.5" fill="#E1E8F4"></rect>
+
+        
+        <rect x="370" y="318" width="128" height="46" rx="8" fill="#FFFFFF"></rect>
+        <rect x="378" y="326" width="30" height="30" rx="6" fill="#C7D7FB"></rect>
+        <rect x="416" y="328" width="74" height="6" rx="3" fill="#E1E8F4"></rect>
+        <rect x="416" y="340" width="58" height="5" rx="2.5" fill="#E1E8F4"></rect>
+      </g>
+    </g>
+    
+    <g class="tl-note"><circle cx="478" cy="106" r="8" fill="#FF5C7A"></circle><text x="478" y="110" text-anchor="middle" font-family="&#39;Segoe UI&#39;,system-ui,sans-serif" font-size="9" font-weight="700" fill="#fff">3</text></g>
+  </g>
+
+  
+  <g class="tl-idle">
+    
+    <path d="M168 256 q22 -8 44 0 l-2 92 l-14 0 l-6 -70 l-6 70 l-14 0 Z" fill="#5A6478"></path>
+    
+    <rect x="166" y="338" width="18" height="8" fill="#4F7CFF"></rect>
+    <rect x="196" y="338" width="18" height="8" fill="#4F7CFF"></rect>
+    <path d="M162 346 q-4 8 4 10 l20 0 l0 -10 Z" fill="#1B2336"></path>
+    <path d="M194 346 q-4 8 4 10 l20 0 l0 -10 Z" fill="#1B2336"></path>
+    
+    <path d="M166 188 q24 -16 48 0 q8 40 0 70 q-24 10 -48 0 q-8 -32 0 -70 Z" fill="url(#tl-shirt)"></path>
+    
+    <rect x="178" y="206" width="24" height="20" rx="5" fill="#DCE7FF"></rect>
+    <path d="M186 211 l8 5 l-8 5 Z" fill="#2E5BFF"></path>
+    
+    <path d="M170 206 q-22 8 -16 36 q2 8 12 8" fill="none" stroke="#4F7CFF" stroke-width="14" stroke-linecap="round"></path>
+    <circle cx="172" cy="250" r="8" fill="#E8A87C"></circle>
+    
+    <g class="tl-hand">
+      <path d="M210 208 q24 6 24 30" fill="none" stroke="#5B86FF" stroke-width="14" stroke-linecap="round"></path>
+      <rect x="224" y="232" width="22" height="34" rx="5" fill="#2B3656"></rect>
+      <rect x="227" y="236" width="16" height="26" rx="2" fill="#5B86FF"></rect>
+      <circle cx="232" cy="240" r="8" fill="#E8A87C"></circle>
+    </g>
+    
+    <rect x="184" y="166" width="14" height="18" rx="6" fill="#E8A87C"></rect>
+    <ellipse cx="191" cy="158" rx="20" ry="21" fill="#F1B98F"></ellipse>
+    <ellipse cx="183" cy="160" rx="3" ry="3.5" fill="#F1B98F"></ellipse>
+    
+    <path d="M171 158 q-4 -32 22 -32 q26 0 22 30 q-4 -16 -22 -16 q-16 0 -18 14 q-2 2 -4 4 Z" fill="#26324F"></path>
+    <path d="M171 154 q-2 -10 6 -16 q-2 8 2 14 Z" fill="#26324F"></path>
+    
+    <circle cx="196" cy="158" r="1.8" fill="#3A2E26"></circle>
+    <path d="M192 166 q4 3 8 1" fill="none" stroke="#C98D6B" stroke-width="1.6" stroke-linecap="round"></path>
+  </g>
+</svg>

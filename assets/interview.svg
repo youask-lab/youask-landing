@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Video interview illustration">
+  <defs>
+    <linearGradient id="iv-screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B86FF"></stop>
+      <stop offset="1" stop-color="#2E5BFF"></stop>
+    </linearGradient>
+    <linearGradient id="iv-desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5B86FF"></stop>
+      <stop offset="1" stop-color="#3D67F0"></stop>
+    </linearGradient>
+    <linearGradient id="iv-shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6E93FF"></stop>
+      <stop offset="1" stop-color="#4F7CFF"></stop>
+    </linearGradient>
+    <radialGradient id="iv-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#DCE7FF" stop-opacity="0.9"></stop>
+      <stop offset="1" stop-color="#DCE7FF" stop-opacity="0"></stop>
+    </radialGradient>
+    
+  </defs>
+
+  
+  <g opacity="0.6">
+    <rect x="78" y="78" width="118" height="150" rx="10" fill="none" stroke="#E3EAF6" stroke-width="6"></rect>
+    <rect x="430" y="60" width="92" height="190" rx="10" fill="none" stroke="#E3EAF6" stroke-width="6"></rect>
+    <line x1="476" y1="60" x2="476" y2="250" stroke="#E3EAF6" stroke-width="5"></line>
+    <line x1="430" y1="120" x2="522" y2="120" stroke="#E3EAF6" stroke-width="5"></line>
+    <line x1="430" y1="185" x2="522" y2="185" stroke="#E3EAF6" stroke-width="5"></line>
+  </g>
+
+  
+  <ellipse cx="300" cy="360" rx="175" ry="15" fill="#1F2937" opacity="0.07"></ellipse>
+
+  
+  <g class="iv-float">
+    <rect x="296" y="34" width="206" height="140" rx="16" fill="url(#iv-screen)"></rect>
+    <rect x="296" y="34" width="206" height="30" rx="16" fill="#2E5BFF"></rect>
+    <rect x="296" y="50" width="206" height="14" fill="#2E5BFF"></rect>
+    <circle cx="314" cy="49" r="4" fill="#9DBBFF"></circle>
+    <circle cx="328" cy="49" r="4" fill="#9DBBFF"></circle>
+    <circle cx="342" cy="49" r="4" fill="#9DBBFF"></circle>
+    
+    <g class="iv-idle">
+      
+      <rect x="396" y="118" width="86" height="56" rx="10" fill="#2E5BFF"></rect>
+      
+      <path d="M378 174 q22 -42 70 -42 q34 0 52 42 Z" fill="#26324F"></path>
+      <path d="M404 132 l14 42 l16 -42 Z" fill="#F4F6FB"></path>
+      <path d="M412 132 l6 30 l6 -30 Z" fill="#4F7CFF"></path>
+      
+      <g class="iv-hand">
+        <path d="M388 150 q-16 -2 -16 -26" fill="none" stroke="#26324F" stroke-width="13" stroke-linecap="round"></path>
+        <circle cx="372" cy="120" r="8" fill="#F1C9A5"></circle>
+      </g>
+      
+      <rect x="418" y="104" width="14" height="16" rx="6" fill="#F1C9A5"></rect>
+      <ellipse cx="425" cy="96" rx="20" ry="21" fill="#F1C9A5"></ellipse>
+      <path d="M405 92 q2 -24 22 -24 q22 0 18 26 q-6 -12 -20 -12 q-14 0 -20 10 Z" fill="#2B2B2B"></path>
+      <g class="iv-eye"><circle cx="419" cy="96" r="1.8" fill="#2B2B2B"></circle><circle cx="431" cy="96" r="1.8" fill="#2B2B2B"></circle></g>
+      <path d="M421 104 q4 3 8 0" fill="none" stroke="#C98D6B" stroke-width="1.6" stroke-linecap="round"></path>
+    </g>
+    
+    <g class="iv-bubble">
+      <rect x="312" y="118" width="62" height="34" rx="12" fill="#FFFFFF"></rect>
+      <path d="M324 150 l-2 12 l14 -8 Z" fill="#FFFFFF"></path>
+      <circle class="iv-dotA" cx="330" cy="135" r="4" fill="#4F7CFF"></circle>
+      <circle class="iv-dotB" cx="343" cy="135" r="4" fill="#4F7CFF"></circle>
+      <circle class="iv-dotC" cx="356" cy="135" r="4" fill="#4F7CFF"></circle>
+    </g>
+    
+    <path d="M300 168 l16 0 l-2 24 Z" fill="#2E5BFF"></path>
+  </g>
+
+  
+  <rect x="158" y="232" width="284" height="13" rx="5" fill="url(#iv-desk)"></rect>
+  <rect x="158" y="244" width="284" height="6" rx="3" fill="#2E5BFF"></rect>
+  <path d="M186 250 l-12 86" stroke="#2B3A67" stroke-width="7" stroke-linecap="round"></path>
+  <path d="M414 250 l12 86" stroke="#2B3A67" stroke-width="7" stroke-linecap="round"></path>
+
+  
+  <ellipse class="iv-glow" cx="312" cy="205" rx="60" ry="44" fill="url(#iv-glow)"></ellipse>
+  <rect x="276" y="178" width="72" height="48" rx="7" fill="#F4F6FB" stroke="#D7E0F0" stroke-width="3"></rect>
+  <rect x="284" y="186" width="56" height="32" rx="4" fill="#DCE7FF"></rect>
+  <rect x="306" y="226" width="12" height="9" fill="#C7D4EE"></rect>
+  <rect x="296" y="234" width="32" height="5" rx="2.5" fill="#B9C8E8"></rect>
+
+  
+  <g class="iv-idle">
+    
+    <ellipse cx="226" cy="262" rx="30" ry="11" fill="#C7D4EE"></ellipse>
+    <path d="M210 268 l-8 64 M242 268 l8 64 M214 290 l24 0" stroke="#2B3A67" stroke-width="6" stroke-linecap="round"></path>
+    
+    <path d="M214 256 q-18 26 -6 56 l16 0 q-6 -30 12 -52 Z" fill="#2B3A67"></path>
+    <path d="M238 256 q22 22 30 50 l-14 6 q-18 -26 -34 -40 Z" fill="#33436F"></path>
+    
+    <path d="M206 308 q-6 8 2 12 l18 0 l0 -10 Z" fill="#1B2336"></path>
+    <path d="M266 300 q8 4 6 12 l-18 4 l-4 -10 Z" fill="#1B2336"></path>
+    
+    <path d="M204 236 q22 -14 46 0 l4 24 q-26 12 -52 0 Z" fill="#33436F"></path>
+    
+    <path d="M206 188 q20 -18 42 -2 q10 28 6 56 q-28 12 -54 0 q-4 -34 6 -54 Z" fill="url(#iv-shirt)"></path>
+    
+    <path d="M248 200 q26 8 30 34" fill="none" stroke="#4F7CFF" stroke-width="15" stroke-linecap="round"></path>
+    <circle cx="280" cy="236" r="8" fill="#A56A43"></circle>
+    
+    <rect x="220" y="168" width="14" height="16" rx="6" fill="#8D5A33"></rect>
+    <ellipse cx="226" cy="160" rx="20" ry="21" fill="#A56A43"></ellipse>
+    
+    <path d="M206 162 q-2 -30 22 -30 q24 0 22 30 q-6 -14 -22 -14 q-16 0 -22 14 Z" fill="#2B2B2B"></path>
+    <circle cx="214" cy="132" r="11" fill="#2B2B2B"></circle>
+  </g>
+</svg>
