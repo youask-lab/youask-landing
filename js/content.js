@@ -11,19 +11,19 @@ window.YA = {
   ],
 
   steps: [
-    { gif: "assets/Timeline.svg",  title: "Create your profile", desc: "Show your expertise, set your topics and tell people how you can help." },
+    { gif: "assets/Timeline.gif", title: "Create your profile", desc: "Show your expertise, set your topics and tell people how you can help." },
     { gif: "assets/Time Slot.gif", title: "Set your time slots", desc: "Open the hours that work for you. Async questions or live calls — your call." },
     { gif: "assets/interview.svg", title: "Answer & advise", desc: "Connect over video call and give people the answers they came for." },
-    { gif: "assets/Earn.gif",      title: "Get paid", desc: "Earn for every session and withdraw your balance whenever you like." },
+    { gif: "assets/Earn.gif", title: "Get paid", desc: "Earn for every session and withdraw your balance whenever you like." },
   ],
 
   experts: [
-    { name: "Aarav Mehta",   role: "Senior SWE · ex-Razorpay", initials: "AM", color: "#1d60fc", online: true,  tags: ["System Design", "Backend", "Interviews"], rate: "₹1,200", unit: "/ 30 min", rating: "4.9", reviews: 214 },
-    { name: "Priya Nair",    role: "Career Coach · 10 yrs",      initials: "PN", color: "#1faf6b", online: true,  tags: ["Career Switch", "LinkedIn", "Salary"], rate: "₹900",   unit: "/ 30 min", rating: "5.0", reviews: 168 },
-    { name: "Rohan Kapoor",  role: "Tech Recruiter · FAANG",     initials: "RK", color: "#ff7a59", online: false, tags: ["Resume", "ATS", "Mock Interview"], rate: "₹750",   unit: "/ review", rating: "4.8", reviews: 302 },
-    { name: "Sara Khan",     role: "Product Manager · ex-Swiggy", initials: "SK", color: "#7a5cff", online: true,  tags: ["PM Interviews", "Roadmaps", "Metrics"], rate: "₹1,500", unit: "/ 45 min", rating: "4.9", reviews: 121 },
-    { name: "Vikram Rao",    role: "Data Scientist · PhD",        initials: "VR", color: "#0ea5b7", online: false, tags: ["ML", "SQL", "Portfolio"], rate: "₹1,100", unit: "/ 30 min", rating: "4.7", reviews: 96 },
-    { name: "Ananya Iyer",   role: "UX Lead · Design mentor",     initials: "AI", color: "#e0457b", online: true,  tags: ["Portfolio", "UX Critique", "Hiring"], rate: "₹950", unit: "/ 30 min", rating: "5.0", reviews: 143 },
+    { name: "Aarav Mehta", role: "Senior SWE · ex-Razorpay", initials: "AM", color: "#1d60fc", online: true, tags: ["System Design", "Backend", "Interviews"], rate: "₹1,200", unit: "/ 30 min", rating: "4.9", reviews: 214 },
+    { name: "Priya Nair", role: "Career Coach · 10 yrs", initials: "PN", color: "#1faf6b", online: true, tags: ["Career Switch", "LinkedIn", "Salary"], rate: "₹900", unit: "/ 30 min", rating: "5.0", reviews: 168 },
+    { name: "Rohan Kapoor", role: "Tech Recruiter · FAANG", initials: "RK", color: "#ff7a59", online: false, tags: ["Resume", "ATS", "Mock Interview"], rate: "₹750", unit: "/ review", rating: "4.8", reviews: 302 },
+    { name: "Sara Khan", role: "Product Manager · ex-Swiggy", initials: "SK", color: "#7a5cff", online: true, tags: ["PM Interviews", "Roadmaps", "Metrics"], rate: "₹1,500", unit: "/ 45 min", rating: "4.9", reviews: 121 },
+    { name: "Vikram Rao", role: "Data Scientist · PhD", initials: "VR", color: "#0ea5b7", online: false, tags: ["ML", "SQL", "Portfolio"], rate: "₹1,100", unit: "/ 30 min", rating: "4.7", reviews: 96 },
+    { name: "Ananya Iyer", role: "UX Lead · Design mentor", initials: "AI", color: "#e0457b", online: true, tags: ["Portfolio", "UX Critique", "Hiring"], rate: "₹950", unit: "/ 30 min", rating: "5.0", reviews: 143 },
   ],
 
   stats: [

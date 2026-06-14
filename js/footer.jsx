@@ -19,7 +19,7 @@ function Nav() {
         </div>
         <div className="nav-cta">
           <a href="https://app.youask.in/login" className="nav-login">Log in</a>
-          <a href="https://app.youask.in/login" className="btn btn-primary">Get started</a>
+          <a href="https://app.youask.in/register" className="btn btn-primary">Get started</a>
         </div>
       </div>
     </nav>
@@ -38,14 +38,14 @@ function Footer() {
       <div className="wrap">
         <div className="foot-grid">
           <div className="foot-brand">
-            <span style={{ display:"inline-block", background:"#fff", borderRadius:12, padding:"8px 14px" }}>
-              <img className="foot-logo" style={{ marginBottom:0 }} src={RES("assets/youAsk.png")} alt="YouAsk" />
+            <span style={{ display: "inline-block", background: "#fff", borderRadius: 12, padding: "8px 14px" }}>
+              <img className="foot-logo" style={{ marginBottom: 0 }} src={RES("assets/youAsk.png")} alt="YouAsk" />
             </span>
             <p style={{ marginTop: 18 }}>Making knowledge accessible, conversations meaningful and expert advice easy to reach. Ask anything — or earn from what you know.</p>
             <div className="foot-soc">
               {social.map((s, i) => (
                 <a href={s.url} key={i} aria-label={s.label} title={s.label}
-                   {...(s.url && s.url !== "#" ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+                  {...(s.url && s.url !== "#" ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
                   <img src={RES(s.img)} alt={s.label} />
                 </a>
               ))}
@@ -80,7 +80,7 @@ function BackToTop() {
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Back to top" title="Back to top"
     >
-      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.6"><path d="M12 19V5M6 11l6-6 6 6" strokeLinecap="round" strokeLinejoin="round"/></svg>
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.6"><path d="M12 19V5M6 11l6-6 6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
     </button>
   );
 }
